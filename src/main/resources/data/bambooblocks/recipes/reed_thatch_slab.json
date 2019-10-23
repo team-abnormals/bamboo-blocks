@@ -5,11 +5,11 @@
   ],
   "key": {
     "T": {
-      "item": "bambooblocks:thatch"
+      "item": "bambooblocks:reed_thatch"
     }
   },
   "result": {
-    "item": "bambooblocks:thatch_slab",
+    "item": "bambooblocks:reed_thatch_slab",
     "count": 6
   }
 }

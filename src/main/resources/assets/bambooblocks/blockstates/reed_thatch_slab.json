@@ -1,15 +1,15 @@
 {
   "variants": {
-    "type=bottom,axis=x": { "model": "bambooblocks:block/thatch_slab", "y": 90 },
-    "type=bottom,axis=y": { "model": "bambooblocks:block/thatch_slab" },
-    "type=bottom,axis=z": { "model": "bambooblocks:block/thatch_slab"},
+    "type=bottom,axis=x": { "model": "bambooblocks:block/reed_thatch_slab", "y": 90 },
+    "type=bottom,axis=y": { "model": "bambooblocks:block/reed_thatch_slab" },
+    "type=bottom,axis=z": { "model": "bambooblocks:block/reed_thatch_slab"},
 
-    "type=top,axis=x": { "model": "bambooblocks:block/thatch_slab_top", "y": 90 },
-    "type=top,axis=y": { "model": "bambooblocks:block/thatch_slab_top" },
-    "type=top,axis=z": { "model": "bambooblocks:block/thatch_slab_top"},
+    "type=top,axis=x": { "model": "bambooblocks:block/reed_thatch_slab_top", "y": 90 },
+    "type=top,axis=y": { "model": "bambooblocks:block/reed_thatch_slab_top" },
+    "type=top,axis=z": { "model": "bambooblocks:block/reed_thatch_slab_top"},
 
-    "type=double,axis=x": { "model": "bambooblocks:block/thatch", "x": 90, "y": 90 },
-    "type=double,axis=y": { "model": "bambooblocks:block/thatch" },
-    "type=double,axis=z": { "model": "bambooblocks:block/thatch", "x": 90 }
+    "type=double,axis=x": { "model": "bambooblocks:block/reed_thatch", "x": 90, "y": 90 },
+    "type=double,axis=y": { "model": "bambooblocks:block/reed_thatch" },
+    "type=double,axis=z": { "model": "bambooblocks:block/reed_thatch", "x": 90 }
   }
 }

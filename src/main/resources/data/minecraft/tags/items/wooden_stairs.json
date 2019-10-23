@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "bambooblocks:bamboo_stairs",
-    "bambooblocks:thatch_stairs",
-    "bambooblocks:thatch"
+    "bambooblocks:reed_thatch_stairs",
+    "bambooblocks:reed_thatch"
   ]
 }

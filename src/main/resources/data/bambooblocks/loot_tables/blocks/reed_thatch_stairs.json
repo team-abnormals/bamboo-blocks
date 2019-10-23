@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bambooblocks:thatch"
+          "name": "bambooblocks:reed_thatch_stairs"
         }
       ],
       "conditions": [
