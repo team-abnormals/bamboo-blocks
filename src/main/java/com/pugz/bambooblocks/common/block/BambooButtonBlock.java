@@ -15,7 +15,7 @@ public class BambooButtonBlock extends AbstractButtonBlock {
 
     @Override
     public int tickRate(IWorldReader worldIn) {
-        return BambooBlocksConfig.bambooButtonLength * 20;
+        return BambooBlocksConfig.bambooButtonLength.get() * 20;
     }
 
     protected SoundEvent getSoundEvent(boolean powered) {

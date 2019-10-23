@@ -32,7 +32,7 @@ public class BambooPressurePlateBlock extends AbstractPressurePlateBlock {
     protected int computeRedstoneStrength(World worldIn, BlockPos pos) {
         AxisAlignedBB axisalignedbb = PRESSURE_AABB.offset(pos);
         List<? extends Entity> list;
-        switch(getSensitivityFromConfig()) {
+        switch(BambooBlocksConfig.bambooPressurePlateSensitivity.get()) {
             case ALL:
                 list = worldIn.getEntitiesWithinAABBExcludingEntity((Entity)null, axisalignedbb);
                 break;
@@ -81,23 +81,9 @@ public class BambooPressurePlateBlock extends AbstractPressurePlateBlock {
         builder.add(POWERED);
     }
 
-    public Sensitivity getSensitivityFromConfig() {
-        switch(BambooBlocksConfig.bambooPressurePlateSensitivity) {
-            case "mobs":
-                return Sensitivity.MOBS;
-            case "player":
-                return Sensitivity.PLAYER;
-            case "humanoids":
-                return Sensitivity.HUMANOIDS;
-            default:
-                return Sensitivity.ALL;
-        }
-    }
-
     public enum Sensitivity {
         ALL,
         MOBS,
-        PLAYER,
-        HUMANOIDS
+        PLAYER
     }
 }

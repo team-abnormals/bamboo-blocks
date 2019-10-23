@@ -36,7 +36,7 @@ public class BlockRegistry {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         ArrayList<Block> blocks = new ArrayList<Block>() {};
-        if (BambooBlocksConfig.bambooPlanks) {
+        if (BambooBlocksConfig.bambooPlanks.get()) {
             blocks.add(BAMBOO_PLANKS);
             blocks.add(BAMBOO_STAIRS);
             blocks.add(BAMBOO_SLAB);
@@ -47,11 +47,11 @@ public class BlockRegistry {
             blocks.add(BAMBOO_BUTTON);
             blocks.add(BAMBOO_PRESSURE_PLATE);
         }
-        if (BambooBlocksConfig.bambooTorches) {
+        if (BambooBlocksConfig.bambooTorches.get()) {
             blocks.add(BAMBOO_TORCH);
             blocks.add(BAMBOO_WALL_TORCH);
         }
-        if (BambooBlocksConfig.thatch) {
+        if (BambooBlocksConfig.reedThatch.get()) {
             blocks.add(REED_THATCH);
             blocks.add(REED_THATCH_STAIRS);
             blocks.add(REED_THATCH_SLAB);
