@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Bambusz Csapóajtó",
   "block.bambooblocks.bamboo_button": "Bambusz Gomb",
   "block.bambooblocks.bamboo_pressure_plate": "Bambusz Nyomólap",
-  "block.bambooblocks.thatch": "Nádtető",
-  "block.bambooblocks.thatch_stairs": "Nádtető lépcső",
-  "block.bambooblocks.thatch_slab": "Nádtető lap"
+  "block.bambooblocks.reed_thatch": "Nádtető",
+  "block.bambooblocks.reed_thatch_stairs": "Nádtető lépcső",
+  "block.bambooblocks.reed_thatch_slab": "Nádtető lap"
 }

@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Bamboo Trapdoor",
   "block.bambooblocks.bamboo_button": "Bamboo Button",
   "block.bambooblocks.bamboo_pressure_plate": "Bamboo Pressure Plate",
-  "block.bambooblocks.thatch": "Thatch",
-  "block.bambooblocks.thatch_stairs": "Thatch Stairs",
-  "block.bambooblocks.thatch_slab": "Thatch Slab"
+  "block.bambooblocks.reed_thatch": "Reed Thatch",
+  "block.bambooblocks.reed_thatch_stairs": "Reed Thatch Stairs",
+  "block.bambooblocks.reed_thatch_slab": "Reed Thatch Slab"
 }

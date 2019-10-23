@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "דלת סתרים מבמבוק",
   "block.bambooblocks.bamboo_button": "כפתור מבמבוק",
   "block.bambooblocks.bamboo_pressure_plate": "לוחית לחץ מבמבוק",
-  "block.bambooblocks.thatch": "סכך",
-  "block.bambooblocks.thatch_stairs": "מדרגות סכך",
-  "block.bambooblocks.thatch_slab": "סכך חצוי"
+  "block.bambooblocks.reed_thatch": "סכך",
+  "block.bambooblocks.reed_thatch_stairs": "מדרגות סכך",
+  "block.bambooblocks.reed_thatch_slab": "סכך חצוי"
 }

@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Bamboe Valluik",
   "block.bambooblocks.bamboo_button": "Bamboe Knop",
   "block.bambooblocks.bamboo_pressure_plate": "Bamboe Drukplaat",
-  "block.bambooblocks.thatch": "Riet",
-  "block.bambooblocks.thatch_stairs": "Rieten Trap",
-  "block.bambooblocks.thatch_slab": "Rieten Plaat"
+  "block.bambooblocks.reed_thatch": "Riet",
+  "block.bambooblocks.reed_thatch_stairs": "Rieten Trap",
+  "block.bambooblocks.reed_thatch_slab": "Rieten Plaat"
 }

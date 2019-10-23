@@ -27,9 +27,9 @@ public class BlockRegistry {
     public static Block BAMBOO_BUTTON = new BambooButtonBlock().setRegistryName("bamboo_button");
     public static Block BAMBOO_PRESSURE_PLATE = new BambooPressurePlateBlock().setRegistryName("bamboo_pressure_plate");
 
-    public static Block THATCH = new DirectionalBlock(BlockProperties.THATCH).setRegistryName("thatch");
-    public static Block THATCH_STAIRS = new StairsBlock(THATCH.getDefaultState(), BlockProperties.THATCH).setRegistryName("thatch_stairs");
-    public static Block THATCH_SLAB = new DirectionalSlabBlock(BlockProperties.THATCH).setRegistryName("thatch_slab");
+    public static Block REED_THATCH = new DirectionalBlock(BlockProperties.REED_THATCH).setRegistryName("reed_thatch");
+    public static Block REED_THATCH_STAIRS = new StairsBlock(REED_THATCH.getDefaultState(), BlockProperties.REED_THATCH).setRegistryName("reed_thatch_stairs");
+    public static Block REED_THATCH_SLAB = new DirectionalSlabBlock(BlockProperties.REED_THATCH).setRegistryName("reed_thatch_slab");
 
     public static Block POTTED_BAMBOO_TORCH = new FlowerPotBlock(BAMBOO_TORCH, BlockProperties.FLOWER_POT_TORCH).setRegistryName("potted_bamboo_torch");
 
@@ -52,9 +52,9 @@ public class BlockRegistry {
             blocks.add(BAMBOO_WALL_TORCH);
         }
         if (BambooBlocksConfig.thatch) {
-            blocks.add(THATCH);
-            blocks.add(THATCH_STAIRS);
-            blocks.add(THATCH_SLAB);
+            blocks.add(REED_THATCH);
+            blocks.add(REED_THATCH_STAIRS);
+            blocks.add(REED_THATCH_SLAB);
         }
         for (Block block : blocks) event.getRegistry().register(block);
         event.getRegistry().registerAll(POTTED_BAMBOO_TORCH);
@@ -76,9 +76,9 @@ public class BlockRegistry {
                 new BlockItem(BAMBOO_TRAPDOOR, redstone).setRegistryName(BAMBOO_TRAPDOOR.getRegistryName()),
                 new BlockItem(BAMBOO_BUTTON, redstone).setRegistryName(BAMBOO_BUTTON.getRegistryName()),
                 new BlockItem(BAMBOO_PRESSURE_PLATE, redstone).setRegistryName(BAMBOO_PRESSURE_PLATE.getRegistryName()),
-                new BlockItem(THATCH, buildingBlocks).setRegistryName(THATCH.getRegistryName()),
-                new BlockItem(THATCH_STAIRS, buildingBlocks).setRegistryName(THATCH_STAIRS.getRegistryName()),
-                new BlockItem(THATCH_SLAB, buildingBlocks).setRegistryName(THATCH_SLAB.getRegistryName())
+                new BlockItem(REED_THATCH, buildingBlocks).setRegistryName(REED_THATCH.getRegistryName()),
+                new BlockItem(REED_THATCH_STAIRS, buildingBlocks).setRegistryName(REED_THATCH_STAIRS.getRegistryName()),
+                new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
     }
 
@@ -89,14 +89,14 @@ public class BlockRegistry {
         fire.setFireInfo(BAMBOO_SLAB, 5, 20);
         fire.setFireInfo(BAMBOO_FENCE, 5, 20);
         fire.setFireInfo(BAMBOO_FENCE_GATE, 5, 20);
-        fire.setFireInfo(THATCH, 10, 32);
-        fire.setFireInfo(THATCH_STAIRS, 10, 32);
-        fire.setFireInfo(THATCH_SLAB, 10, 32);
+        fire.setFireInfo(REED_THATCH, 10, 32);
+        fire.setFireInfo(REED_THATCH_STAIRS, 10, 32);
+        fire.setFireInfo(REED_THATCH_SLAB, 10, 32);
     }
 
     public static void registerCompostables() {
-        ComposterBlock.CHANCES.put(THATCH.asItem(), 0.75F);
-        ComposterBlock.CHANCES.put(THATCH_STAIRS.asItem(), 0.6F);
-        ComposterBlock.CHANCES.put(THATCH_SLAB.asItem(), 0.45F);
+        ComposterBlock.CHANCES.put(REED_THATCH.asItem(), 0.75F);
+        ComposterBlock.CHANCES.put(REED_THATCH_STAIRS.asItem(), 0.6F);
+        ComposterBlock.CHANCES.put(REED_THATCH_SLAB.asItem(), 0.45F);
     }
 }

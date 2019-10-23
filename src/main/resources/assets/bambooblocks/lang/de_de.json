@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Bambus-Falltür",
   "block.bambooblocks.bamboo_button": "Bambus-Taste",
   "block.bambooblocks.bamboo_pressure_plate": "Bambus-Druckplatte",
-  "block.bambooblocks.thatch": "Thatch",
-  "block.bambooblocks.thatch_stairs": "Thatchtreppen",
-  "block.bambooblocks.thatch_slab": "Thatchplatte"
+  "block.bambooblocks.reed_thatch": "Thatch",
+  "block.bambooblocks.reed_thatch_stairs": "Thatchtreppen",
+  "block.bambooblocks.reed_thatch_slab": "Thatchplatte"
 }

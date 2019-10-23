@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Alçapão de Bambu",
   "block.bambooblocks.bamboo_button": "Botão de Bambu",
   "block.bambooblocks.bamboo_pressure_plate": "Placa de Pressão de Bambu",
-  "block.bambooblocks.thatch": "Colmo",
-  "block.bambooblocks.thatch_stairs": "Escadas de colmo",
-  "block.bambooblocks.thatch_slab": "Degrau de colmo"
+  "block.bambooblocks.reed_thatch": "Colmo",
+  "block.bambooblocks.reed_thatch_stairs": "Escadas de colmo",
+  "block.bambooblocks.reed_thatch_slab": "Degrau de colmo"
 }

@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Bambusfallem",
   "block.bambooblocks.bamboo_button": "Bambusknapp",
   "block.bambooblocks.bamboo_pressure_plate": "Bambustrykkeplate",
-  "block.bambooblocks.thatch": "Strå",
-  "block.bambooblocks.thatch_stairs": "Stråtrapp",
-  "block.bambooblocks.thatch_slab": "Stråhelle"
+  "block.bambooblocks.reed_thatch": "Strå",
+  "block.bambooblocks.reed_thatch_stairs": "Stråtrapp",
+  "block.bambooblocks.reed_thatch_slab": "Stråhelle"
 }

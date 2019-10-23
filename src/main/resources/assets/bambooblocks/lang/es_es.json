@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Trampilla de Bambú",
   "block.bambooblocks.bamboo_button": "Botón de Bambú",
   "block.bambooblocks.bamboo_pressure_plate": "Placa de presión de Bambú",
-  "block.bambooblocks.thatch": "Paja",
-  "block.bambooblocks.thatch_stairs": "Escalera de Paja",
-  "block.bambooblocks.thatch_slab": "Losa de Paja"
+  "block.bambooblocks.reed_thatch": "Paja",
+  "block.bambooblocks.reed_thatch_stairs": "Escalera de Paja",
+  "block.bambooblocks.reed_thatch_slab": "Losa de Paja"
 }

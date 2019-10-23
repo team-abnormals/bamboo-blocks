@@ -9,7 +9,7 @@
   "block.bambooblocks.bamboo_trapdoor": "Hatch o' Bambarr",
   "block.bambooblocks.bamboo_button": "Knob o' Bambarr",
   "block.bambooblocks.bamboo_pressure_plate": "Bambarr Booby Trap",
-  "block.bambooblocks.thatch": "Thatch",
-  "block.bambooblocks.thatch_stairs": "Stairs o' Thatch",
-  "block.bambooblocks.thatch_slab": "Slab o' Thatch"
+  "block.bambooblocks.reed_thatch": "Reed Thatch",
+  "block.bambooblocks.reed_thatch_stairs": "Stairs o' Reed Thatch",
+  "block.bambooblocks.reed_thatch_slab": "Slab o' Reed Thatch"
 }
