@@ -1,0 +1,44 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "bambooblocks:block/bamboo_torch_size2"
+	},
+	"elements": [
+		{
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 14, 9.5],
+			"faces": {
+				"north": {"uv": [6, 2, 9, 16], "texture": "#1"},
+				"east": {"uv": [6, 2, 9, 16], "texture": "#1"},
+				"south": {"uv": [6, 2, 9, 16], "texture": "#1"},
+				"west": {"uv": [6, 2, 9, 16], "texture": "#1"},
+				"up": {"uv": [6, 2, 9, 5], "texture": "#1", "cullface": "up"},
+				"down": {"uv": [6, 8, 9, 11], "texture": "#1", "cullface": "down"}
+			}
+		},
+		{
+			"from": [8, 0, 2.5],
+			"to": [8, 11, 13.5],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"east": {"uv": [2, 5, 13, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"west": {"uv": [2, 5, 13, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2.5, 0, 8],
+			"to": [13.5, 11, 8],
+			"faces": {
+				"north": {"uv": [2, 5, 13, 16], "texture": "#1"},
+				"east": {"uv": [0, 5, 16, 16], "texture": "#1"},
+				"south": {"uv": [2, 5, 13, 16], "texture": "#1"},
+				"west": {"uv": [0, 5, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 16], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 16], "rotation": 90, "texture": "#1"}
+			}
+		}
+	]
+}

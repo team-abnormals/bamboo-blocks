@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "size=0": { "model": "bambooblocks:block/bamboo_torch_size0" },
+        "size=1": { "model": "bambooblocks:block/bamboo_torch_size1" },
+        "size=2": { "model": "bambooblocks:block/bamboo_torch_size2" }
+    }
+}

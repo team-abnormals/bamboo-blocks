@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "bambooblocks:block/thatch" },
+    "axis=z": { "model": "bambooblocks:block/thatch", "x": 90 },
+    "axis=x": { "model": "bambooblocks:block/thatch", "x": 90, "y": 90 }
+  }
+}

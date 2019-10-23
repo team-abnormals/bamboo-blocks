@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bamboo"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "result": {
+    "item": "bambooblocks:bamboo_torch",
+    "count": 4
+  }
+}

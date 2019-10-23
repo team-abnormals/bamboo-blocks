@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "bambooblocks:block/bamboo_planks"
+  }
+}

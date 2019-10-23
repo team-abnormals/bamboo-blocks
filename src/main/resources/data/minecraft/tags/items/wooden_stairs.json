@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bambooblocks:bamboo_stairs",
+    "bambooblocks:thatch_stairs",
+    "bambooblocks:bamboo_planks",
+    "bambooblocks:thatch"
+  ]
+}
