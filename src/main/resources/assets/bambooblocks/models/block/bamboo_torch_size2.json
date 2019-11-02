@@ -1,6 +1,0 @@
-{
-    "parent": "bambooblocks:block/template_torch_large",
-    "textures": {
-        "torch": "bambooblocks:block/bamboo_torch_size2"
-    }
-}

@@ -1,3 +1,6 @@
 {
-  "parent": "bambooblocks:block/bamboo_button_inventory"
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "bambooblocks:block/bamboo_planks"
+  }
 }

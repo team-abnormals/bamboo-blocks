@@ -38,14 +38,11 @@ public class DirectionalSlabBlock extends SlabBlock {
         } else {
             IFluidState fluidState = context.getWorld().getFluidState(pos);
             boolean waterlogged = fluidState.getFluid() == Fluids.WATER;
-            if (face != Direction.DOWN) {
-                if (face == Direction.UP || context.getHitVec().y - (double) pos.getY() <= 0.5D) {
-                    return getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, waterlogged).with(AXIS, context.getNearestLookingDirection().getAxis());
-                } else {
-                    return getDefaultState().with(TYPE, SlabType.TOP).with(WATERLOGGED, waterlogged).with(AXIS, context.getNearestLookingDirection().getAxis());
-                }
+            if (context.getHitVec().y - (double) pos.getY() <= 0.5D) {
+                return getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, waterlogged).with(AXIS, context.getNearestLookingDirection().getAxis());
+            } else {
+                return getDefaultState().with(TYPE, SlabType.TOP).with(WATERLOGGED, waterlogged).with(AXIS, context.getNearestLookingDirection().getAxis());
             }
-            else return getDefaultState();
         }
     }
 }

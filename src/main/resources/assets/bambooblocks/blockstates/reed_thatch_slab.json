@@ -1,15 +1,39 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bottom": "bambooblocks:block/reed_thatch",
+      "top": "bambooblocks:block/reed_thatch",
+      "side": "bambooblocks:block/reed_thatch"
+    }
+  },
   "variants": {
-    "type=bottom,axis=x": { "model": "bambooblocks:block/reed_thatch_slab", "y": 90 },
-    "type=bottom,axis=y": { "model": "bambooblocks:block/reed_thatch_slab" },
-    "type=bottom,axis=z": { "model": "bambooblocks:block/reed_thatch_slab"},
-
-    "type=top,axis=x": { "model": "bambooblocks:block/reed_thatch_slab_top", "y": 90 },
-    "type=top,axis=y": { "model": "bambooblocks:block/reed_thatch_slab_top" },
-    "type=top,axis=z": { "model": "bambooblocks:block/reed_thatch_slab_top"},
-
-    "type=double,axis=x": { "model": "bambooblocks:block/reed_thatch", "x": 90, "y": 90 },
-    "type=double,axis=y": { "model": "bambooblocks:block/reed_thatch" },
-    "type=double,axis=z": { "model": "bambooblocks:block/reed_thatch", "x": 90 }
+    "type=bottom,axis=x": { "model": "block/slab", "y": 90 },
+    "type=bottom,axis=y": { "model": "block/slab" },
+    "type=bottom,axis=z": { "model": "block/slab"},
+    "type=top,axis=x": { "model": "block/slab_top", "y": 90 },
+    "type=top,axis=y": { "model": "block/slab_top" },
+    "type=top,axis=z": { "model": "block/slab_top"},
+    "type=double,axis=x": {
+      "model": "block/cube_column", "x": 90, "y": 90,
+      "textures": {
+        "end": "bambooblocks:block/reed_thatch",
+        "side": "bambooblocks:block/reed_thatch"
+      }
+    },
+    "type=double,axis=y": {
+      "model": "block/cube_column",
+      "textures": {
+        "end": "bambooblocks:block/reed_thatch",
+        "side": "bambooblocks:block/reed_thatch"
+      }
+    },
+    "type=double,axis=z": {
+      "model": "block/cube_column", "x": 90,
+      "textures": {
+        "end": "bambooblocks:block/reed_thatch",
+        "side": "bambooblocks:block/reed_thatch"
+      }
+    }
   }
 }

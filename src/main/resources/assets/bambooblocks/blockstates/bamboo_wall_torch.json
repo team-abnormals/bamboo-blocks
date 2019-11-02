@@ -1,8 +1,14 @@
 {
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "torch": "bambooblocks:block/bamboo_torch"
+        }
+    },
     "variants": {
-        "facing=east": { "model": "bambooblocks:block/bamboo_wall_torch" },
-        "facing=south": { "model": "bambooblocks:block/bamboo_wall_torch", "y": 90 },
-        "facing=west": { "model": "bambooblocks:block/bamboo_wall_torch", "y": 180 },
-        "facing=north": { "model": "bambooblocks:block/bamboo_wall_torch", "y": 270 }
+        "facing=east": { "model": "bambooblocks:block/torch_wall" },
+        "facing=south": { "model": "bambooblocks:block/torch_wall", "y": 90 },
+        "facing=west": { "model": "bambooblocks:block/torch_wall", "y": 180 },
+        "facing=north": { "model": "bambooblocks:block/torch_wall", "y": 270 }
     }
 }

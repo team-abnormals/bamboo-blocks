@@ -50,6 +50,7 @@ public class BlockRegistry {
         if (BambooBlocksConfig.bambooTorches.get()) {
             blocks.add(BAMBOO_TORCH);
             blocks.add(BAMBOO_WALL_TORCH);
+            blocks.add(POTTED_BAMBOO_TORCH);
         }
         if (BambooBlocksConfig.reedThatch.get()) {
             blocks.add(REED_THATCH);
@@ -57,7 +58,6 @@ public class BlockRegistry {
             blocks.add(REED_THATCH_SLAB);
         }
         for (Block block : blocks) event.getRegistry().register(block);
-        event.getRegistry().registerAll(POTTED_BAMBOO_TORCH);
     }
 
     @SubscribeEvent

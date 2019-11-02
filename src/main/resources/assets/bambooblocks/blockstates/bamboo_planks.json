@@ -1,5 +1,13 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "bambooblocks:block/bamboo_planks"
+    },
+    "model": "block/cube_all",
+    "uvlock": true
+  },
   "variants": {
-    "": { "model": "bambooblocks:block/bamboo_planks" }
+    "": [{}]
   }
 }

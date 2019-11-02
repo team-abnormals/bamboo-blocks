@@ -1,7 +1,20 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bottom": "bambooblocks:block/bamboo_planks",
+      "top": "bambooblocks:block/bamboo_planks",
+      "side": "bambooblocks:block/bamboo_planks"
+    }
+  },
   "variants": {
-    "type=bottom": { "model": "bambooblocks:block/bamboo_slab" },
-    "type=top": { "model": "bambooblocks:block/bamboo_slab_top" },
-    "type=double": { "model": "bambooblocks:block/bamboo_planks" }
+    "type=bottom": { "model": "block/slab" },
+    "type=top": { "model": "block/slab_top" },
+    "type=double": {
+      "model": "block/cube_all",
+      "textures": {
+        "all": "bambooblocks:block/bamboo_planks"
+      }
+    }
   }
 }
