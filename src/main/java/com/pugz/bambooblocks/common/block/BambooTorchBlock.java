@@ -97,7 +97,7 @@ public class BambooTorchBlock extends TorchBlock {
             return getDefaultState().with(SIZE, getSizeByBambooLeavesSize(downState.get(PROPERTY_BAMBOO_LEAVES)));
         }
         else if (downState.getBlock() instanceof BambooSaplingBlock && context.getFace() == Direction.UP) {
-            world.setBlockState(pos.down(), Blocks.BAMBOO.getDefaultState(), 2);
+            world.setBlockState(pos.down(), Blocks.BAMBOO.getDefaultState(), 3);
             return getDefaultState();
         }
         return getDefaultState();

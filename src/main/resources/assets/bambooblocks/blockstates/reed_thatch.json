@@ -7,8 +7,9 @@
     }
   },
   "variants": {
-    "axis=y": { "model": "block/cube_column" },
-    "axis=z": { "model": "block/cube_column", "x": 90 },
-    "axis=x": { "model": "block/cube_column", "x": 90, "y": 90 }
+    "facing=north": { "model": "block/cube_column" },
+    "facing=east": { "model": "block/cube_column", "y": 90 },
+    "facing=south": { "model": "block/cube_column", "y": 180 },
+    "facing=west": { "model": "block/cube_column", "y": 270 }
   }
 }

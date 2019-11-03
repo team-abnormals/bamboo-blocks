@@ -8,28 +8,37 @@
     }
   },
   "variants": {
-    "type=bottom,axis=x": { "model": "block/slab", "y": 90 },
-    "type=bottom,axis=y": { "model": "block/slab" },
-    "type=bottom,axis=z": { "model": "block/slab"},
-    "type=top,axis=x": { "model": "block/slab_top", "y": 90 },
-    "type=top,axis=y": { "model": "block/slab_top" },
-    "type=top,axis=z": { "model": "block/slab_top"},
-    "type=double,axis=x": {
-      "model": "block/cube_column", "x": 90, "y": 90,
-      "textures": {
-        "end": "bambooblocks:block/reed_thatch",
-        "side": "bambooblocks:block/reed_thatch"
-      }
-    },
-    "type=double,axis=y": {
+    "type=bottom,facing=north": { "model": "block/slab"},
+    "type=bottom,facing=east": { "model": "block/slab", "y": 90 },
+    "type=bottom,facing=south": { "model": "block/slab", "y": 180 },
+    "type=bottom,facing=west": { "model": "block/slab", "y": 270 },
+    "type=top,facing=north": { "model": "block/slab_top"},
+    "type=top,facing=east": { "model": "block/slab_top", "y": 90 },
+    "type=top,facing=south": { "model": "block/slab_top", "y": 180 },
+    "type=top,facing=west": { "model": "block/slab_top", "y": 270 },
+    "type=double,facing=north": {
       "model": "block/cube_column",
       "textures": {
         "end": "bambooblocks:block/reed_thatch",
         "side": "bambooblocks:block/reed_thatch"
       }
     },
-    "type=double,axis=z": {
-      "model": "block/cube_column", "x": 90,
+    "type=double,facing=east": {
+      "model": "block/cube_column", "y": 90,
+      "textures": {
+        "end": "bambooblocks:block/reed_thatch",
+        "side": "bambooblocks:block/reed_thatch"
+      }
+    },
+    "type=double,facing=south": {
+      "model": "block/cube_column", "y": 180,
+      "textures": {
+        "end": "bambooblocks:block/reed_thatch",
+        "side": "bambooblocks:block/reed_thatch"
+      }
+    },
+    "type=double,facing=west": {
+      "model": "block/cube_column", "y": 270,
       "textures": {
         "end": "bambooblocks:block/reed_thatch",
         "side": "bambooblocks:block/reed_thatch"
