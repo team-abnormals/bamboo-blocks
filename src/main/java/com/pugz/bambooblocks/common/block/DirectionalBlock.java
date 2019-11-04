@@ -25,6 +25,6 @@ public class DirectionalBlock extends Block {
 
     @Nullable
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return getDefaultState().with(FACING, context.getNearestLookingDirection());
+        return getDefaultState().with(FACING, context.getPlayer().getHorizontalFacing());
     }
 }
