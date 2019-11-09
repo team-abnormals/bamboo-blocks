@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "bambooblocks:bamboo_button",
-    "bambooblocks:bamboo_torch"
+    "bambooblocks:bamboo_button"
   ]
 }

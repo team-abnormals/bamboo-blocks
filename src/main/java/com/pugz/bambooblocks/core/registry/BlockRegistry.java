@@ -6,6 +6,7 @@ import com.pugz.bambooblocks.common.config.BambooBlocksConfig;
 import com.pugz.bambooblocks.core.util.BlockProperties;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
+import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -92,6 +93,7 @@ public class BlockRegistry {
         fire.setFireInfo(REED_THATCH, 10, 32);
         fire.setFireInfo(REED_THATCH_STAIRS, 10, 32);
         fire.setFireInfo(REED_THATCH_SLAB, 10, 32);
+        ForgeEventFactory.getItemBurnTime(new ItemStack(BlockRegistry.BAMBOO_TORCH), 400);
     }
 
     public static void registerCompostables() {
