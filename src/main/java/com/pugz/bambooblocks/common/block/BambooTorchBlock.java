@@ -1,12 +1,8 @@
 package com.pugz.bambooblocks.common.block;
 
-import com.pugz.bambooblocks.core.registry.BlockRegistry;
 import com.pugz.bambooblocks.core.util.BlockProperties;
 import net.minecraft.block.*;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
@@ -38,7 +34,7 @@ public class BambooTorchBlock extends TorchBlock {
 
     public BambooTorchBlock() {
         super(BlockProperties.BAMBOO_TORCH);
-        setDefaultState(getDefaultState().with(SIZE, 0));
+        setDefaultState(stateContainer.getBaseState().with(SIZE, 0));
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> p_206840_1_) {

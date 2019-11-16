@@ -15,7 +15,7 @@ public class DirectionalBlock extends Block {
 
     public DirectionalBlock(Properties properties) {
         super(properties);
-        setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
+        setDefaultState(stateContainer.getBaseState().with(FACING, Direction.NORTH));
     }
 
     @Override

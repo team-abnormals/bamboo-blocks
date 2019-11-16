@@ -22,7 +22,7 @@ public class DirectionalSlabBlock extends SlabBlock {
 
     public DirectionalSlabBlock(Block.Properties properties) {
         super(properties);
-        setDefaultState(getDefaultState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, false).with(FACING, Direction.NORTH));
+        setDefaultState(stateContainer.getBaseState().with(TYPE, SlabType.BOTTOM).with(WATERLOGGED, false).with(FACING, Direction.NORTH));
     }
 
     @Override
