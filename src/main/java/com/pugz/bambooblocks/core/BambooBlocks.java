@@ -10,8 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 @Mod("bambooblocks")
-public class BambooBlocks
-{
+public class BambooBlocks {
     public BambooBlocks() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BambooBlocksConfig.COMMON_CONFIG);

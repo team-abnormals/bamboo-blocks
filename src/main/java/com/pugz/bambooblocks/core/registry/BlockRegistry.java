@@ -3,6 +3,7 @@ package com.pugz.bambooblocks.core.registry;
 import com.pugz.bambooblocks.common.block.*;
 import com.pugz.bambooblocks.common.block.DirectionalBlock;
 import com.pugz.bambooblocks.common.config.BambooBlocksConfig;
+import com.pugz.bambooblocks.common.item.FuelItem;
 import com.pugz.bambooblocks.core.util.BlockProperties;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
@@ -67,12 +68,12 @@ public class BlockRegistry {
         Item.Properties decorations = new Item.Properties().group(ItemGroup.DECORATIONS);
         Item.Properties redstone = new Item.Properties().group(ItemGroup.REDSTONE);
         event.getRegistry().registerAll(
-                new WallOrFloorItem(BAMBOO_TORCH, BAMBOO_WALL_TORCH, decorations).setRegistryName(BAMBOO_TORCH.getRegistryName()),
+                new FuelItem.WallOrFloorFuelItem(BAMBOO_TORCH, BAMBOO_WALL_TORCH, decorations, 50).setRegistryName(BAMBOO_TORCH.getRegistryName()),
                 new BlockItem(BAMBOO_PLANKS, buildingBlocks).setRegistryName(BAMBOO_PLANKS.getRegistryName()),
                 new BlockItem(BAMBOO_STAIRS, buildingBlocks).setRegistryName(BAMBOO_STAIRS.getRegistryName()),
                 new BlockItem(BAMBOO_SLAB, buildingBlocks).setRegistryName(BAMBOO_SLAB.getRegistryName()),
-                new BlockItem(BAMBOO_FENCE, decorations).setRegistryName(BAMBOO_FENCE.getRegistryName()),
-                new BlockItem(BAMBOO_FENCE_GATE, redstone).setRegistryName(BAMBOO_FENCE_GATE.getRegistryName()),
+                new FuelItem(BAMBOO_FENCE, decorations, 300).setRegistryName(BAMBOO_FENCE.getRegistryName()),
+                new FuelItem(BAMBOO_FENCE_GATE, redstone, 300).setRegistryName(BAMBOO_FENCE_GATE.getRegistryName()),
                 new BlockItem(BAMBOO_DOOR, redstone).setRegistryName(BAMBOO_DOOR.getRegistryName()),
                 new BlockItem(BAMBOO_TRAPDOOR, redstone).setRegistryName(BAMBOO_TRAPDOOR.getRegistryName()),
                 new BlockItem(BAMBOO_BUTTON, redstone).setRegistryName(BAMBOO_BUTTON.getRegistryName()),
