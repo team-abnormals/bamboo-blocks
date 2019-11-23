@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "SPS",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "bambooblocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambooblocks:bamboo_ladder",
+    "count": 3
+  }
+}

@@ -2,6 +2,7 @@ package com.pugz.bambooblocks.core.registry;
 
 import com.pugz.bambooblocks.common.block.*;
 import com.pugz.bambooblocks.common.block.DirectionalBlock;
+import com.pugz.bambooblocks.common.block.LadderBlock;
 import com.pugz.bambooblocks.common.config.BambooBlocksConfig;
 import com.pugz.bambooblocks.common.item.FuelItem;
 import com.pugz.bambooblocks.core.util.BlockProperties;
@@ -10,6 +11,7 @@ import net.minecraft.item.*;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.ArrayList;
@@ -35,6 +37,8 @@ public class BlockRegistry {
 
     public static Block POTTED_BAMBOO_TORCH = new FlowerPotBlock(BAMBOO_TORCH, BlockProperties.FLOWER_POT_TORCH).setRegistryName("potted_bamboo_torch");
 
+    public static Block BAMBOO_LADDER = new LadderBlock(BlockProperties.LADDER).setRegistryName("bamboo_ladder");
+
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         ArrayList<Block> blocks = new ArrayList<Block>() {};
@@ -59,6 +63,9 @@ public class BlockRegistry {
             blocks.add(REED_THATCH_STAIRS);
             blocks.add(REED_THATCH_SLAB);
         }
+        if (ModList.get().isLoaded("quark")) {
+            blocks.add(BAMBOO_LADDER);
+        }
         for (Block block : blocks) event.getRegistry().register(block);
     }
 
@@ -82,6 +89,9 @@ public class BlockRegistry {
                 new BlockItem(REED_THATCH_STAIRS, buildingBlocks).setRegistryName(REED_THATCH_STAIRS.getRegistryName()),
                 new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
+        if (ModList.get().isLoaded("quark")) {
+            event.getRegistry().register(new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()));
+        }
     }
 
     public static void registerFlammables() {
