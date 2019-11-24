@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "bambooblocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambooblocks:vertical_bamboo_planks",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "quark:flag",
+      "flag": "vertical_planks"
+    }
+  ]
+}

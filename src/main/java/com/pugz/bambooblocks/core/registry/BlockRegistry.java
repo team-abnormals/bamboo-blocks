@@ -37,7 +37,9 @@ public class BlockRegistry {
 
     public static Block POTTED_BAMBOO_TORCH = new FlowerPotBlock(BAMBOO_TORCH, BlockProperties.FLOWER_POT_TORCH).setRegistryName("potted_bamboo_torch");
 
+    //quark
     public static Block BAMBOO_LADDER = new LadderBlock(BlockProperties.LADDER).setRegistryName("bamboo_ladder");
+    public static Block VERTICAL_BAMBOO_PLANKS = new Block(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_planks");
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -65,6 +67,7 @@ public class BlockRegistry {
         }
         if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
+            blocks.add(VERTICAL_BAMBOO_PLANKS);
         }
         for (Block block : blocks) event.getRegistry().register(block);
     }
@@ -90,7 +93,10 @@ public class BlockRegistry {
                 new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
         if (ModList.get().isLoaded("quark")) {
-            event.getRegistry().register(new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()));
+            event.getRegistry().registerAll(
+                    new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()),
+                    new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName())
+            );
         }
     }
 
@@ -104,7 +110,7 @@ public class BlockRegistry {
         fire.setFireInfo(REED_THATCH, 10, 32);
         fire.setFireInfo(REED_THATCH_STAIRS, 10, 32);
         fire.setFireInfo(REED_THATCH_SLAB, 10, 32);
-        ForgeEventFactory.getItemBurnTime(new ItemStack(BlockRegistry.BAMBOO_TORCH), 400);
+        fire.setFireInfo(VERTICAL_BAMBOO_PLANKS, 5, 20);
     }
 
     public static void registerCompostables() {
