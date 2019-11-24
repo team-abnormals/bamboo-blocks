@@ -12,5 +12,7 @@
   "block.bambooblocks.reed_thatch": "Reed Thatch",
   "block.bambooblocks.reed_thatch_stairs": "Reed Thatch Stairs",
   "block.bambooblocks.reed_thatch_slab": "Reed Thatch Slab",
-  "block.bambooblocks.bamboo_ladder": "Bamboo Ladder"
+  "block.bambooblocks.bamboo_ladder": "Bamboo Ladder",
+
+  "item.bambooblocks.bamboo_boat": "Bamboo Boat"
 }
