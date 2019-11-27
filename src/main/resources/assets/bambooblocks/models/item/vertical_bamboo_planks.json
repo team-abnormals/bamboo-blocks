@@ -1,5 +1,5 @@
 {
-  "parent": "quark:block/vertical_planks",
+  "parent": "bambooblocks:block/vertical_planks",
   "textures": {
     "end": "bambooblocks:block/bamboo_planks",
     "side": "bambooblocks:block/bamboo_planks"
