@@ -68,12 +68,12 @@ public class BlockRegistry {
             blocks.add(REED_THATCH_STAIRS);
             blocks.add(REED_THATCH_SLAB);
         }
-        if (ModList.get().isLoaded("quark")) {
+        //if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
             blocks.add(VERTICAL_BAMBOO_PLANKS);
             blocks.add(BAMBOO_CHEST);
             blocks.add(TRAPPED_BAMBOO_CHEST);
-        }
+        //}
         for (Block block : blocks) event.getRegistry().register(block);
     }
 
@@ -97,14 +97,14 @@ public class BlockRegistry {
                 new BlockItem(REED_THATCH_STAIRS, buildingBlocks).setRegistryName(REED_THATCH_STAIRS.getRegistryName()),
                 new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
-        if (ModList.get().isLoaded("quark")) {
+        //if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
                     new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()),
                     new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName()),
                     new BlockItem(BAMBOO_CHEST, decorations).setRegistryName(BAMBOO_CHEST.getRegistryName()),
                     new BlockItem(TRAPPED_BAMBOO_CHEST, decorations).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName())
             );
-        }
+        //}
     }
 
     public static void registerFlammables() {
