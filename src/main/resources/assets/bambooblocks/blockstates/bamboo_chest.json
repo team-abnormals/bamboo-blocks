@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "particle": "bambooblocks:block/bamboo_planks"
+        },
+        "model": "block/chest"
+    },
+    "variants": {
+        "": [{}]
+    }
+}

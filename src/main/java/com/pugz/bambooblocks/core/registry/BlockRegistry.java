@@ -1,14 +1,15 @@
 package com.pugz.bambooblocks.core.registry;
 
 import com.pugz.bambooblocks.common.block.*;
+import com.pugz.bambooblocks.common.block.ChestBlock;
 import com.pugz.bambooblocks.common.block.DirectionalBlock;
 import com.pugz.bambooblocks.common.block.LadderBlock;
+import com.pugz.bambooblocks.common.block.TrappedChestBlock;
 import com.pugz.bambooblocks.common.config.BambooBlocksConfig;
 import com.pugz.bambooblocks.common.item.FuelItem;
 import com.pugz.bambooblocks.core.util.BlockProperties;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
-import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
@@ -40,6 +41,8 @@ public class BlockRegistry {
     //quark
     public static Block BAMBOO_LADDER = new LadderBlock(BlockProperties.LADDER).setRegistryName("bamboo_ladder");
     public static Block VERTICAL_BAMBOO_PLANKS = new Block(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_planks");
+    public static Block BAMBOO_CHEST = new ChestBlock(BlockProperties.CHEST).setRegistryName("bamboo_chest");
+    public static Block TRAPPED_BAMBOO_CHEST = new TrappedChestBlock(BlockProperties.CHEST).setRegistryName("trapped_bamboo_chest");
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -68,6 +71,8 @@ public class BlockRegistry {
         if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
             blocks.add(VERTICAL_BAMBOO_PLANKS);
+            blocks.add(BAMBOO_CHEST);
+            blocks.add(TRAPPED_BAMBOO_CHEST);
         }
         for (Block block : blocks) event.getRegistry().register(block);
     }
@@ -95,7 +100,9 @@ public class BlockRegistry {
         if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
                     new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()),
-                    new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName())
+                    new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName()),
+                    new BlockItem(BAMBOO_CHEST, decorations).setRegistryName(BAMBOO_CHEST.getRegistryName()),
+                    new BlockItem(TRAPPED_BAMBOO_CHEST, decorations).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName())
             );
         }
     }

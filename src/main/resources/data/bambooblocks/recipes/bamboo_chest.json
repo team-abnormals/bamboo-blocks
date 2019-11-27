@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "bambooblocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bambooblocks:bamboo_chest"
+  }
+}
