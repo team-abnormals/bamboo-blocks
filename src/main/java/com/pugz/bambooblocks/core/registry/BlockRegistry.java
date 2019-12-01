@@ -44,7 +44,7 @@ public class BlockRegistry {
     public static Block BAMBOO_CHEST = new ChestBlock(BlockProperties.CHEST).setRegistryName("bamboo_chest");
     public static Block TRAPPED_BAMBOO_CHEST = new TrappedChestBlock(BlockProperties.CHEST).setRegistryName("trapped_bamboo_chest");
     public static Block VERTICAL_BAMBOO_SLAB = new VerticalSlabBlock(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_slab");
-    public static Block VERTICAL_REED_THATCH_SLAB = new VerticalSlabBlock.Directional(BlockProperties.REED_THATCH).setRegistryName("vertical_reed_thatch_slab");
+    public static Block VERTICAL_REED_THATCH_SLAB = new VerticalSlabBlock(BlockProperties.REED_THATCH).setRegistryName("vertical_reed_thatch_slab");
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {

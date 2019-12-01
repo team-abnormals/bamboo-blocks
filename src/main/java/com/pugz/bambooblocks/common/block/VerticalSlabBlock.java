@@ -117,34 +117,6 @@ public class VerticalSlabBlock extends Block implements IWaterLoggable {
         return type == PathType.WATER && worldIn.getFluidState(pos).isTagged(FluidTags.WATER);
     }
 
-    public static class Directional extends VerticalSlabBlock {
-        public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
-        public Directional(Block.Properties properties) {
-            super(properties);
-            setDefaultState(stateContainer.getBaseState().with(TYPE, VerticalSlabType.NORTH).with(WATERLOGGED, false).with(FACING, Direction.NORTH));
-        }
-
-        @Override
-        protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-            builder.add(TYPE, FACING, WATERLOGGED);
-        }
-
-        @Override
-        public BlockState getStateForPlacement(BlockItemUseContext context) {
-            BlockPos blockpos = context.getPos();
-            BlockState blockstate = context.getWorld().getBlockState(blockpos);
-            if(blockstate.getBlock() == this) {
-                return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
-            }
-            IFluidState fluid = context.getWorld().getFluidState(blockpos);
-            BlockState retState = getDefaultState().with(WATERLOGGED, fluid.getFluid() == Fluids.WATER);
-            Direction direction = getDirectionForPlacement(context);
-            VerticalSlabType type = VerticalSlabType.fromDirection(direction);
-            return retState.with(TYPE, type).with(FACING, context.getPlayer().getHorizontalFacing());
-        }
-    }
-
     public enum VerticalSlabType implements IStringSerializable {
         NORTH(Direction.NORTH),
         SOUTH(Direction.SOUTH),
