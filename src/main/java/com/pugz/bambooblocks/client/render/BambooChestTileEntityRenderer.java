@@ -8,8 +8,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class BambooChestTileEntityRenderer extends ChestTileEntityRenderer<BambooChestTileEntity> {
     private BambooChestTileEntity tile;
-    public static ResourceLocation forceNormal = new ResourceLocation("bambooblocks", "textures/model/chest/bamboo_chest_normal.png");
-    public static ResourceLocation forceDouble = new ResourceLocation("bambooblocks", "textures/model/chest/bamboo_chest_double.png");
+    public static ResourceLocation forceNormal = new ResourceLocation("bambooblocks", "textures/model/chest/bamboo_normal.png");
+    public static ResourceLocation forceDouble = new ResourceLocation("bambooblocks", "textures/model/chest/bamboo_double.png");
 
     @Override
     public void render(BambooChestTileEntity tileEntityIn, double x, double y, double z, float partialTicks, int destroyStage) {
