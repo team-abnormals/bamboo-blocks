@@ -1,6 +1,7 @@
 package com.pugz.bambooblocks.client.render;
 
 import com.pugz.bambooblocks.common.block.ChestBlock;
+import com.pugz.bambooblocks.common.block.TrappedChestBlock;
 import com.pugz.bambooblocks.common.tileentity.TrappedBambooChestTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.tileentity.ChestTileEntityRenderer;
@@ -23,7 +24,7 @@ public class TrappedBambooChestTileEntityRenderer extends ChestTileEntityRendere
         if(tile != null && tile.hasWorld()) {
             if(location.getPath().contains("normal")) {
                 Block block = tile.getBlockState().getBlock();
-                if(block instanceof ChestBlock) {
+                if(block instanceof TrappedChestBlock) {
                     location = isDouble ? forceDouble : forceNormal;
                 }
             }
