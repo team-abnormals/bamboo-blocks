@@ -70,14 +70,14 @@ public class BlockRegistry {
             blocks.add(REED_THATCH_STAIRS);
             blocks.add(REED_THATCH_SLAB);
         }
-        //if (ModList.get().isLoaded("quark")) {
+        if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
             blocks.add(VERTICAL_BAMBOO_PLANKS);
             blocks.add(BAMBOO_CHEST);
             blocks.add(TRAPPED_BAMBOO_CHEST);
             blocks.add(VERTICAL_BAMBOO_SLAB);
             blocks.add(VERTICAL_REED_THATCH_SLAB);
-        //}
+        }
         for (Block block : blocks) event.getRegistry().register(block);
     }
 
@@ -101,7 +101,7 @@ public class BlockRegistry {
                 new BlockItem(REED_THATCH_STAIRS, buildingBlocks).setRegistryName(REED_THATCH_STAIRS.getRegistryName()),
                 new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
-        //if (ModList.get().isLoaded("quark")) {
+        if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
                     new FuelItem(BAMBOO_LADDER, decorations, 300).setRegistryName(BAMBOO_LADDER.getRegistryName()),
                     new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName()),
@@ -110,7 +110,7 @@ public class BlockRegistry {
                     new FuelItem(VERTICAL_BAMBOO_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_BAMBOO_SLAB.getRegistryName()),
                     new FuelItem(VERTICAL_REED_THATCH_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_REED_THATCH_SLAB.getRegistryName())
             );
-        //}
+        }
     }
 
     public static void registerFlammables() {

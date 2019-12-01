@@ -14,9 +14,9 @@ public class ClientProxy extends ServerProxy {
     @Override
     public void init() {
         RenderingRegistry.registerEntityRenderingHandler(BambooBoatEntity.class, BambooBoatRenderer::new);
-        //if (ModList.get().isLoaded("quark")) {
+        if (ModList.get().isLoaded("quark")) {
             ClientRegistry.bindTileEntitySpecialRenderer(BambooChestTileEntity.class, new BambooChestTileEntityRenderer());
             ClientRegistry.bindTileEntitySpecialRenderer(TrappedBambooChestTileEntity.class, new TrappedBambooChestTileEntityRenderer());
-        //}
+        }
     }
 }

@@ -153,12 +153,12 @@ public class VerticalSlabBlock extends Block implements IWaterLoggable {
         DOUBLE(null);
 
         private final String name;
-        public Direction direction;
+        public final Direction direction;
         public final VoxelShape shape;
 
         VerticalSlabType(Direction directionIn) {
-            name = direction == null ? "double" : direction.getName();
             direction = directionIn;
+            name = direction == null ? "double" : direction.getName();
             if (direction == null)
                 shape = VoxelShapes.fullCube();
             else {
