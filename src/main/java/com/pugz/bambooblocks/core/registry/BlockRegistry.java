@@ -43,6 +43,8 @@ public class BlockRegistry {
     public static Block VERTICAL_BAMBOO_PLANKS = new Block(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_planks");
     public static Block BAMBOO_CHEST = new ChestBlock(BlockProperties.CHEST).setRegistryName("bamboo_chest");
     public static Block TRAPPED_BAMBOO_CHEST = new TrappedChestBlock(BlockProperties.CHEST).setRegistryName("trapped_bamboo_chest");
+    public static Block VERTICAL_BAMBOO_SLAB = new VerticalSlabBlock(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_slab");
+    public static Block VERTICAL_REED_THATCH_SLAB = new VerticalSlabBlock.Directional(BlockProperties.REED_THATCH).setRegistryName("vertical_reed_thatch_slab");
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -73,6 +75,8 @@ public class BlockRegistry {
             blocks.add(VERTICAL_BAMBOO_PLANKS);
             blocks.add(BAMBOO_CHEST);
             blocks.add(TRAPPED_BAMBOO_CHEST);
+            blocks.add(VERTICAL_BAMBOO_SLAB);
+            blocks.add(VERTICAL_REED_THATCH_SLAB);
         //}
         for (Block block : blocks) event.getRegistry().register(block);
     }
@@ -99,10 +103,12 @@ public class BlockRegistry {
         );
         //if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
-                    new BlockItem(BAMBOO_LADDER, decorations).setRegistryName(BAMBOO_LADDER.getRegistryName()),
+                    new FuelItem(BAMBOO_LADDER, decorations, 300).setRegistryName(BAMBOO_LADDER.getRegistryName()),
                     new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName()),
-                    new BlockItem(BAMBOO_CHEST, decorations).setRegistryName(BAMBOO_CHEST.getRegistryName()),
-                    new BlockItem(TRAPPED_BAMBOO_CHEST, decorations).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName())
+                    new FuelItem(BAMBOO_CHEST, decorations, 300).setRegistryName(BAMBOO_CHEST.getRegistryName()),
+                    new FuelItem(TRAPPED_BAMBOO_CHEST, decorations, 300).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName()),
+                    new FuelItem(VERTICAL_BAMBOO_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_BAMBOO_SLAB.getRegistryName()),
+                    new FuelItem(VERTICAL_REED_THATCH_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_REED_THATCH_SLAB.getRegistryName())
             );
         //}
     }
@@ -118,6 +124,8 @@ public class BlockRegistry {
         fire.setFireInfo(REED_THATCH_STAIRS, 10, 32);
         fire.setFireInfo(REED_THATCH_SLAB, 10, 32);
         fire.setFireInfo(VERTICAL_BAMBOO_PLANKS, 5, 20);
+        fire.setFireInfo(VERTICAL_BAMBOO_SLAB, 5, 20);
+        fire.setFireInfo(VERTICAL_REED_THATCH_SLAB, 5, 20);
     }
 
     public static void registerCompostables() {

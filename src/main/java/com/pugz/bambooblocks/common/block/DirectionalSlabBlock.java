@@ -18,7 +18,7 @@ import net.minecraft.util.math.BlockPos;
 import javax.annotation.Nullable;
 
 public class DirectionalSlabBlock extends SlabBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;;
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     public DirectionalSlabBlock(Block.Properties properties) {
         super(properties);

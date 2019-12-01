@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bambooblocks:bamboo_planks"
+    "bambooblocks:bamboo_planks",
+    "bambooblocks:vertical_bamboo_planks"
   ]
 }

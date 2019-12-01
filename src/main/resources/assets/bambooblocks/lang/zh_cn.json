@@ -1,0 +1,21 @@
+{
+  "block.bambooblocks.bamboo_torch": "竹制火把",
+  "block.bambooblocks.bamboo_planks": "竹板",
+  "block.bambooblocks.bamboo_stairs": "竹楼梯",
+  "block.bambooblocks.bamboo_slab": "竹台阶",
+  "block.bambooblocks.bamboo_fence": "竹栅栏",
+  "block.bambooblocks.bamboo_fence_gate": "竹栅栏门",
+  "block.bambooblocks.bamboo_door": "竹门",
+  "block.bambooblocks.bamboo_trapdoor": "竹活版门",
+  "block.bambooblocks.bamboo_button": "竹按钮",
+  "block.bambooblocks.bamboo_pressure_plate": "竹压力板",
+  "block.bambooblocks.reed_thatch": "茅草",
+  "block.bambooblocks.reed_thatch_stairs": "茅草楼梯",
+  "block.bambooblocks.reed_thatch_slab": "茅草台阶",
+  "block.bambooblocks.bamboo_ladder": "竹梯",
+  "block.bambooblocks.vertical_bamboo_planks": "竖纹竹板",
+  "block.bambooblocks.bamboo_chest": "竹箱",
+  "block.bambooblocks.trapped_bamboo_chest": "竹陷阱箱",
+
+  "item.bambooblocks.bamboo_boat": "竹艇"
+}
