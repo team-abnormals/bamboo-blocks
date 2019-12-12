@@ -110,7 +110,6 @@ public class BlockRegistry {
                     new FuelItem(VERTICAL_BAMBOO_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_BAMBOO_SLAB.getRegistryName()),
                     new FuelItem(VERTICAL_REED_THATCH_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_REED_THATCH_SLAB.getRegistryName())
             );
-            TrappedChestBlock.provideItemBlock(decorations);
         }
     }
 
