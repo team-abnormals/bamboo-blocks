@@ -1,5 +1,7 @@
 package com.pugz.bambooblocks.core.registry;
 
+import com.pugz.bambooblocks.client.render.BambooChestTileEntityRenderer;
+import com.pugz.bambooblocks.client.render.TileEntityItemRenderer;
 import com.pugz.bambooblocks.common.block.*;
 import com.pugz.bambooblocks.common.block.ChestBlock;
 import com.pugz.bambooblocks.common.block.DirectionalBlock;
@@ -70,14 +72,14 @@ public class BlockRegistry {
             blocks.add(REED_THATCH_STAIRS);
             blocks.add(REED_THATCH_SLAB);
         }
-        if (ModList.get().isLoaded("quark")) {
+        //if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
             blocks.add(HORIZONTAL_BAMBOO_PLANKS);
             blocks.add(BAMBOO_CHEST);
             blocks.add(TRAPPED_BAMBOO_CHEST);
             blocks.add(VERTICAL_BAMBOO_SLAB);
             blocks.add(VERTICAL_REED_THATCH_SLAB);
-        }
+        //}
         for (Block block : blocks) event.getRegistry().register(block);
     }
 
@@ -101,17 +103,16 @@ public class BlockRegistry {
                 new BlockItem(REED_THATCH_STAIRS, buildingBlocks).setRegistryName(REED_THATCH_STAIRS.getRegistryName()),
                 new BlockItem(REED_THATCH_SLAB, buildingBlocks).setRegistryName(REED_THATCH_SLAB.getRegistryName())
         );
-        if (ModList.get().isLoaded("quark")) {
+        //if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
                     new FuelItem(BAMBOO_LADDER, decorations, 300).setRegistryName(BAMBOO_LADDER.getRegistryName()),
                     new BlockItem(HORIZONTAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(HORIZONTAL_BAMBOO_PLANKS.getRegistryName()),
-                    new FuelItem(BAMBOO_CHEST, decorations, 300).setRegistryName(BAMBOO_CHEST.getRegistryName()),
-                    new FuelItem(TRAPPED_BAMBOO_CHEST, decorations, 300).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName()),
+                    new FuelItem(BAMBOO_CHEST, (new Item.Properties()).group(ItemGroup.DECORATIONS).setTEISR(() -> TileEntityItemRenderer::new), 300).setRegistryName(BAMBOO_CHEST.getRegistryName()),
+                    new FuelItem(TRAPPED_BAMBOO_CHEST, (new Item.Properties()).group(ItemGroup.DECORATIONS).setTEISR(() -> TileEntityItemRenderer::new), 300).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName()),
                     new FuelItem(VERTICAL_BAMBOO_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_BAMBOO_SLAB.getRegistryName()),
                     new FuelItem(VERTICAL_REED_THATCH_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_REED_THATCH_SLAB.getRegistryName())
             );
-            TrappedChestBlock.provideItemBlock(decorations);
-        }
+        //}
     }
 
     public static void registerFlammables() {
