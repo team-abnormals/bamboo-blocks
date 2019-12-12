@@ -40,7 +40,7 @@ public class BlockRegistry {
 
     //quark
     public static Block BAMBOO_LADDER = new LadderBlock(BlockProperties.LADDER).setRegistryName("bamboo_ladder");
-    public static Block VERTICAL_BAMBOO_PLANKS = new Block(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_planks");
+    public static Block HORIZONTAL_BAMBOO_PLANKS = new Block(BlockProperties.BAMBOO_PLANKS).setRegistryName("horizontal_bamboo_planks");
     public static Block BAMBOO_CHEST = new ChestBlock(BlockProperties.CHEST).setRegistryName("bamboo_chest");
     public static Block TRAPPED_BAMBOO_CHEST = new TrappedChestBlock(BlockProperties.CHEST).setRegistryName("trapped_bamboo_chest");
     public static Block VERTICAL_BAMBOO_SLAB = new VerticalSlabBlock(BlockProperties.BAMBOO_PLANKS).setRegistryName("vertical_bamboo_slab");
@@ -72,7 +72,7 @@ public class BlockRegistry {
         }
         if (ModList.get().isLoaded("quark")) {
             blocks.add(BAMBOO_LADDER);
-            blocks.add(VERTICAL_BAMBOO_PLANKS);
+            blocks.add(HORIZONTAL_BAMBOO_PLANKS);
             blocks.add(BAMBOO_CHEST);
             blocks.add(TRAPPED_BAMBOO_CHEST);
             blocks.add(VERTICAL_BAMBOO_SLAB);
@@ -104,7 +104,7 @@ public class BlockRegistry {
         if (ModList.get().isLoaded("quark")) {
             event.getRegistry().registerAll(
                     new FuelItem(BAMBOO_LADDER, decorations, 300).setRegistryName(BAMBOO_LADDER.getRegistryName()),
-                    new BlockItem(VERTICAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(VERTICAL_BAMBOO_PLANKS.getRegistryName()),
+                    new BlockItem(HORIZONTAL_BAMBOO_PLANKS, buildingBlocks).setRegistryName(HORIZONTAL_BAMBOO_PLANKS.getRegistryName()),
                     new FuelItem(BAMBOO_CHEST, decorations, 300).setRegistryName(BAMBOO_CHEST.getRegistryName()),
                     new FuelItem(TRAPPED_BAMBOO_CHEST, decorations, 300).setRegistryName(TRAPPED_BAMBOO_CHEST.getRegistryName()),
                     new FuelItem(VERTICAL_BAMBOO_SLAB, buildingBlocks, 150).setRegistryName(VERTICAL_BAMBOO_SLAB.getRegistryName()),
@@ -124,7 +124,7 @@ public class BlockRegistry {
         fire.setFireInfo(REED_THATCH, 10, 32);
         fire.setFireInfo(REED_THATCH_STAIRS, 10, 32);
         fire.setFireInfo(REED_THATCH_SLAB, 10, 32);
-        fire.setFireInfo(VERTICAL_BAMBOO_PLANKS, 5, 20);
+        fire.setFireInfo(HORIZONTAL_BAMBOO_PLANKS, 5, 20);
         fire.setFireInfo(VERTICAL_BAMBOO_SLAB, 5, 20);
         fire.setFireInfo(VERTICAL_REED_THATCH_SLAB, 5, 20);
     }
