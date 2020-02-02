@@ -1,12 +1,12 @@
 modLoader="javafml"
 loaderVersion="[28,]"
 logoFile="logo.png"
-authors="Pugz"
+authors="Pugz & bageldotjpg"
 credits="*Endergized*, Farcr, Rohan, László Gaming, ʟᴇᴍᴏɴ, Wolftopia, ilja615, Ønelix, Kicsivazz, Axoladdy, TitaniumBrain, and qsefthuopq"
 
 [[mods]]
     modId="bambooblocks"
-    version="1.2.10"
+    version="1.2.11"
     displayName="Bamboo Blocks"
     description='''
     Fun Bamboo Blocks to build with!

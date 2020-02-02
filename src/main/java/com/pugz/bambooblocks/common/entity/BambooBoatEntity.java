@@ -43,6 +43,7 @@ import net.minecraftforge.fml.network.NetworkHooks;
 import javax.annotation.Nullable;
 import java.util.List;
 
+@SuppressWarnings("deprecation")
 public class BambooBoatEntity extends BoatEntity {
     private static final DataParameter<Integer> TIME_SINCE_HIT = EntityDataManager.createKey(BambooBoatEntity.class, DataSerializers.VARINT);
     private static final DataParameter<Integer> FORWARD_DIRECTION = EntityDataManager.createKey(BambooBoatEntity.class, DataSerializers.VARINT);
@@ -505,7 +506,7 @@ public class BambooBoatEntity extends BoatEntity {
         }
     }
 
-    @Override
+	@Override
     public void updatePassenger(Entity passenger) {
         if (isPassenger(passenger)) {
             float f = 0.0F;
