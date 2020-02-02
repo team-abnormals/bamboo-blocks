@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "end": "bambooblocks:block/bamboo_planks",
+            "side": "bambooblocks:block/bamboo_bookshelf"
+        },
+        "model": "block/cube_column"
+    },
+    "variants": {
+        "": [{}]
+    }
+}
