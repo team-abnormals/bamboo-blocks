@@ -1,12 +1,5 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "all": "bambooblocks:block/bamboo_planks"
-    },
-    "model": "quark:block/vertical_planks"
-  },
-  "variants": {
-    "": [{}]
-  }
+   	"variants": {
+        "": { "model": "bambooblocks:block/horizontal_bamboo_planks" }
+    }
 }

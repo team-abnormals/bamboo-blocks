@@ -1,6 +1,3 @@
 {
-  "parent": "block/template_fence_gate",
-  "textures": {
-    "texture": "bambooblocks:block/bamboo_planks"
-  }
+    "parent": "bambooblocks:block/bamboo_fence_gate"
 }

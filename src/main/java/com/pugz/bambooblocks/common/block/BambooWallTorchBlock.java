@@ -43,7 +43,7 @@ public class BambooWallTorchBlock extends WallTorchBlock {
         Direction direction = (Direction)state.get(HORIZONTAL_FACING);
         BlockPos oppositePos = pos.offset(direction.getOpposite());
         BlockState oppositeState = world.getBlockState(oppositePos);
-        return oppositeState.func_224755_d(world, oppositePos, direction) || oppositeState.getBlock() instanceof LeavesBlock;
+        return oppositeState.isSolidSide(world, oppositePos, direction) || oppositeState.getBlock() instanceof LeavesBlock;
     }
 
     @OnlyIn(Dist.CLIENT)

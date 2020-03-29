@@ -1,23 +1,7 @@
 {
-  "forge_marker": 1,
   "variants": {
-    "size=0": {
-        "model": "bambooblocks:block/template_torch",
-        "textures": {
-            "torch": "bambooblocks:block/bamboo_torch"
-        }
-    },
-    "size=1": {
-        "model": "bambooblocks:block/template_torch",
-        "textures": {
-            "torch": "bambooblocks:block/bamboo_torch_size1"
-        }
-    },
-    "size=2": {
-        "model": "bambooblocks:block/template_torch_large",
-        "textures": {
-            "torch": "bambooblocks:block/bamboo_torch_size2"
-        }
-    }
+    "size=0": { "model": "bambooblocks:block/template_torch" },
+    "size=1": { "model": "bambooblocks:block/template_torch" },
+    "size=2": { "model": "bambooblocks:block/template_torch_large" }
   }
 }

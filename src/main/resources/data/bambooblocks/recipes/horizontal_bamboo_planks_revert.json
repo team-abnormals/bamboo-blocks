@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "bambooblocks:vertical_bamboo_planks"
+      "item": "bambooblocks:horizontal_bamboo_planks"
     }
   ],
   "result": {
@@ -10,9 +10,9 @@
     "count": 1
   },
   "conditions": [
-    {
-      "type": "quark:flag",
-      "flag": "vertical_planks"
+  	{
+       "type": "forge:mod_loaded",
+       "modid": "quark"
     }
   ]
 }

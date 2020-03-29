@@ -44,7 +44,7 @@ public class BambooTorchBlock extends TorchBlock {
     @Override
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
         BlockState downState = worldIn.getBlockState(pos.down());
-        return func_220055_a(worldIn, pos.down(), Direction.UP) || downState.getBlock() instanceof LeavesBlock || downState.getBlock() instanceof BambooBlock;
+        return hasEnoughSolidSide(worldIn, pos.down(), Direction.UP) || downState.getBlock() instanceof LeavesBlock || downState.getBlock() instanceof BambooBlock;
     }
 
     @Override

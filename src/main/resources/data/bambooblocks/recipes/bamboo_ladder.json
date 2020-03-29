@@ -16,5 +16,11 @@
   "result": {
     "item": "bambooblocks:bamboo_ladder",
     "count": 3
-  }
+  },
+  "conditions": [
+  	{
+       "type": "forge:mod_loaded",
+       "modid": "quark"
+    }
+  ]
 }

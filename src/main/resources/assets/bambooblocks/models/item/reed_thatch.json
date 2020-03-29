@@ -1,7 +1,3 @@
 {
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "bambooblocks:block/reed_thatch",
-    "side": "bambooblocks:block/reed_thatch"
-  }
+    "parent": "bambooblocks:block/reed_thatch"
 }

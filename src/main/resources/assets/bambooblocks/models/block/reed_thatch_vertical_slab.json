@@ -1,0 +1,8 @@
+{
+    "parent": "bambooblocks:block/vertical_slab",
+    "textures": {
+        "side": "bambooblocks:block/reed_thatch",
+        "top": "bambooblocks:block/reed_thatch",
+        "bottom": "bambooblocks:block/reed_thatch"
+    }
+}

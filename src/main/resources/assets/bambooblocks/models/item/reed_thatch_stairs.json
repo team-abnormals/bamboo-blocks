@@ -1,8 +1,3 @@
 {
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "bambooblocks:block/reed_thatch",
-    "top": "bambooblocks:block/reed_thatch",
-    "side": "bambooblocks:block/reed_thatch"
-  }
+    "parent": "bambooblocks:block/reed_thatch_stairs"
 }

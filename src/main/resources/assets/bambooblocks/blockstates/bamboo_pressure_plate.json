@@ -1,12 +1,6 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "texture": "bambooblocks:block/bamboo_planks"
+    "variants": {
+        "powered=false": { "model": "bambooblocks:block/bamboo_pressure_plate" },
+        "powered=true": { "model": "bambooblocks:block/bamboo_pressure_plate_down" }
     }
-  },
-  "variants": {
-    "powered=false": { "model": "block/pressure_plate_up" },
-    "powered=true": { "model": "block/pressure_plate_down" }
-  }
 }

@@ -1,6 +1,3 @@
 {
-  "parent": "quark:block/vertical_planks",
-  "textures": {
-    "all": "bambooblocks:block/bamboo_planks"
-  }
+    "parent": "bambooblocks:block/horizontal_bamboo_planks"
 }

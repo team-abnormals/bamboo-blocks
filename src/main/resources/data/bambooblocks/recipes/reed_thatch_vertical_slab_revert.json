@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bambooblocks:reed_thatch_vertical_slab"
+    }
+  ],
+  "result": {
+    "item": "bambooblocks:reed_thatch_slab",
+    "count": 1
+  },
+  "conditions": [
+  	{
+       "type": "forge:mod_loaded",
+       "modid": "quark"
+    }
+  ]
+}

@@ -15,9 +15,9 @@
     "count": 3
   },
   "conditions": [
-    {
-      "type": "quark:flag",
-      "flag": "vertical_planks"
+  	{
+       "type": "forge:mod_loaded",
+       "modid": "quark"
     }
   ]
 }

@@ -16,8 +16,8 @@
   "block.bambooblocks.horizontal_bamboo_planks": "Horizontal Bamboo Planks",
   "block.bambooblocks.bamboo_chest": "Bamboo Chest",
   "block.bambooblocks.trapped_bamboo_chest": "Trapped Bamboo Chest",
-  "block.bambooblocks.vertical_bamboo_slab": "Vertical Bamboo Slab",
-  "block.bambooblocks.vertical_reed_thatch_slab": "Vertical Reed Thatch Slab",
+  "block.bambooblocks.bamboo_vertical_slab": "Vertical Bamboo Slab",
+  "block.bambooblocks.reed_thatch_vertical_slab": "Vertical Reed Thatch Slab",
   "block.bambooblocks.bamboo_bookshelf": "Bamboo Bookshelf",
 
   "item.bambooblocks.bamboo_boat": "Bamboo Boat"

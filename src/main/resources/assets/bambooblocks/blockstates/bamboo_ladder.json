@@ -1,16 +1,8 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "particle": "bambooblocks:block/bamboo_ladder",
-      "texture": "bambooblocks:block/bamboo_ladder"
-    },
-    "model": "quark:block/ladder_but_not_the_vanilla_one_so_resourcepacks_dont_override_it"
-  },
-  "variants": {
-    "facing=north": [{}],
-    "facing=east":  { "y": 90 },
-    "facing=south": { "y": 180 },
-    "facing=west":  { "y": 270 }
-  }
+    "variants": {
+        "facing=north": { "model": "bambooblocks:block/bamboo_ladder" },
+        "facing=east":  { "model": "bambooblocks:block/bamboo_ladder", "y": 90 },
+        "facing=south": { "model": "bambooblocks:block/bamboo_ladder", "y": 180 },
+        "facing=west":  { "model": "bambooblocks:block/bamboo_ladder", "y": 270 }
+    }
 }

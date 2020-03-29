@@ -13,11 +13,11 @@
   "block.bambooblocks.reed_thatch_stairs": "Schody z trzcinowego poszycia",
   "block.bambooblocks.reed_thatch_slab": "Płyta z trzcinowego poszycia",
   "block.bambooblocks.bamboo_ladder": "Bambusowa drabina",
-  "block.bambooblocks.vertical_bamboo_planks": "Pionowe bambusowe deski",
+  "block.bambooblocks.horizontal_bamboo_planks": "Pionowe bambusowe deski",
   "block.bambooblocks.bamboo_chest": "Bambusowa skrzynia",
   "block.bambooblocks.trapped_bamboo_chest": "Bambusowa skrzynia pułapka",
-  "block.bambooblocks.vertical_bamboo_slab": "Pionowa bambusowa płyta",
-  "block.bambooblocks.vertical_reed_thatch_slab": "Pionowa płyta z trzcinowego poszycia",
+  "block.bambooblocks.bamboo_vertical_slab": "Pionowa bambusowa płyta",
+  "block.bambooblocks.reed_thatch_vertical_slab": "Pionowa płyta z trzcinowego poszycia",
 
   "item.bambooblocks.bamboo_boat": "Bambusowa łódka"
 }

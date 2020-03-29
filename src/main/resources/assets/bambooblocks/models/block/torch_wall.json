@@ -1,6 +1,7 @@
 {
 	"ambientocclusion": false,
 	"textures": {
+		"torch": "bambooblocks:block/bamboo_torch",
 		"particle": "#torch"
 	},
 	"elements": [

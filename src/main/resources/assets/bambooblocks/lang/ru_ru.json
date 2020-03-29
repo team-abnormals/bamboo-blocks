@@ -16,8 +16,8 @@
   "block.bambooblocks.horizontal_bamboo_planks": "Горизотнальные бамбуковые доски",
   "block.bambooblocks.bamboo_chest": "Бамбуковый сундук",
   "block.bambooblocks.trapped_bamboo_chest": "Бумбуковый сундук-ловушка",
-  "block.bambooblocks.vertical_bamboo_slab": "Вертикальная бамбуковая плита",
-  "block.bambooblocks.vertical_reed_thatch_slab": "Вертикальная соломенная плита",
+  "block.bambooblocks.bamboo_vertical_slab": "Вертикальная бамбуковая плита",
+  "block.bambooblocks.reed_thatch_vertical_slab": "Вертикальная соломенная плита",
 
   "item.bambooblocks.bamboo_boat": "Бамбуковая лодка"
 }

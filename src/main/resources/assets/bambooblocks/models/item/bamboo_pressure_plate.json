@@ -1,6 +1,3 @@
 {
-  "parent": "block/pressure_plate_up",
-  "textures": {
-    "texture": "bambooblocks:block/bamboo_planks"
-  }
+    "parent": "bambooblocks:block/bamboo_pressure_plate"
 }

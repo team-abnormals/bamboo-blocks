@@ -1,7 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "bambooblocks:block/bamboo_planks"
-  },
-  "uvlock": true
+    "parent": "bambooblocks:block/bamboo_planks"
 }

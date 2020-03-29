@@ -1,20 +1,7 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "bottom": "bambooblocks:block/reed_thatch",
-      "top": "bambooblocks:block/reed_thatch",
-      "side": "bambooblocks:block/reed_thatch"
+    "variants": {
+        "type=bottom": { "model": "bambooblocks:block/reed_thatch_slab" },
+        "type=top": { "model": "bambooblocks:block/reed_thatch_slab_top" },
+        "type=double": { "model": "bambooblocks:block/reed_thatch" }
     }
-  },
-  "variants": {
-    "type=bottom": { "model": "block/slab" },
-    "type=top": { "model": "block/slab_top" },
-    "type=double": {
-      "model": "block/cube_all",
-      "textures": {
-        "all": "bambooblocks:block/reed_thatch"
-      }
-    }
-  }
 }
