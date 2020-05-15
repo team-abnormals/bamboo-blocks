@@ -1,13 +1,31 @@
 package com.pugz.bambooblocks.common.block;
 
-import com.pugz.bambooblocks.core.util.BlockProperties;
-import net.minecraft.block.*;
+import static net.minecraft.block.BambooBlock.PROPERTY_BAMBOO_LEAVES;
+
+import java.util.Random;
+
+import javax.annotation.Nullable;
+
+import com.pugz.bambooblocks.core.BambooBlocksRegistry;
+import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
+
+import net.minecraft.block.BambooBlock;
+import net.minecraft.block.BambooSaplingBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.TorchBlock;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BambooLeaves;
 import net.minecraft.util.Direction;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
@@ -20,12 +38,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-import javax.annotation.Nullable;
-
-import java.util.Random;
-
-import static net.minecraft.block.BambooBlock.PROPERTY_BAMBOO_LEAVES;
-
 public class BambooTorchBlock extends TorchBlock {
 
     protected static final VoxelShape TORCH = Block.makeCuboidShape(5.5D, 0.0D, 5.5D, 10.5D, 14.0D, 10.5D);
@@ -33,9 +45,21 @@ public class BambooTorchBlock extends TorchBlock {
     protected static final IntegerProperty SIZE = IntegerProperty.create("size", 0, 2);
 
     public BambooTorchBlock() {
-        super(BlockProperties.BAMBOO_TORCH);
+        super(BambooBlocksRegistry.Properties.BAMBOO_TORCH);
         setDefaultState(stateContainer.getBaseState().with(SIZE, 0));
     }
+    
+    @Override
+	public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
+		if(ItemStackUtils.isInGroup(this.asItem(), group)) {
+			int targetIndex = ItemStackUtils.findIndexOfItem(Items.TORCH, items);
+			if(targetIndex != -1) {
+				items.add(targetIndex + 1, new ItemStack(this));
+			} else {
+				super.fillItemGroup(group, items);
+			}
+		}
+	}
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> p_206840_1_) {
         p_206840_1_.add(SIZE);

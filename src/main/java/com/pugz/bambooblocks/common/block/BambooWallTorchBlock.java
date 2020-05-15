@@ -1,8 +1,12 @@
 package com.pugz.bambooblocks.common.block;
 
+import java.util.Map;
+import java.util.Random;
+
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import com.pugz.bambooblocks.core.util.BlockProperties;
+import com.pugz.bambooblocks.core.BambooBlocksRegistry;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.LeavesBlock;
@@ -18,15 +22,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-import java.util.Map;
-import java.util.Random;
-
 public class BambooWallTorchBlock extends WallTorchBlock {
 
     private static final Map<Direction, VoxelShape> SHAPES = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.makeCuboidShape(5.5D, 3.0D, 11.0D, 10.5D, 16.0D, 16.0D), Direction.SOUTH, Block.makeCuboidShape(5.5D, 3.0D, 0.0D, 10.5D, 16.0D, 5.0D), Direction.WEST, Block.makeCuboidShape(11.0D, 3.0D, 5.5D, 16.0D, 16.0D, 10.5D), Direction.EAST, Block.makeCuboidShape(0.0D, 3.0D, 5.5D, 5.0D, 16.0D, 10.5D)));
 
     public BambooWallTorchBlock() {
-        super(BlockProperties.BAMBOO_TORCH);
+        super(BambooBlocksRegistry.Properties.BAMBOO_TORCH);
     }
 
     @Override
