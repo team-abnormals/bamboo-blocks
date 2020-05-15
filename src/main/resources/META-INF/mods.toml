@@ -6,15 +6,29 @@ credits="*Endergized*, Farcr, Rohan, László Gaming, ʟᴇᴍᴏɴ, Wolftopia, 
 
 [[mods]]
     modId="bambooblocks"
-    version="1.3"
+    version="1.4.0"
     displayName="Bamboo Blocks"
     description='''
     Fun Bamboo Blocks to build with!
     '''
 
 [[dependencies.bambooblocks]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.1.49,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bambooblocks]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bambooblocks]]
     modId="abnormals_core"
     mandatory=true
-    versionRange="[1.0.3,)"
+    versionRange="[1.0.4,)"
     ordering="AFTER"
     side="BOTH"
