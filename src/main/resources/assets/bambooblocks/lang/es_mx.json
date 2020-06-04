@@ -9,16 +9,16 @@
   "block.bambooblocks.bamboo_trapdoor": "Trampilla de bambú",
   "block.bambooblocks.bamboo_button": "Botón de bambú",
   "block.bambooblocks.bamboo_pressure_plate": "Placa de presión de bambú",
-  "block.bambooblocks.reed_thatch": "Paja de junco",
-  "block.bambooblocks.reed_thatch_stairs": "Escaleras de paja de junco",
-  "block.bambooblocks.reed_thatch_slab": "Losa de paja de junco",
+  "block.bambooblocks.reed_thatch": "Cubierta de cañas",
+  "block.bambooblocks.reed_thatch_stairs": "Escaleras de cañas",
+  "block.bambooblocks.reed_thatch_slab": "Losa de cañas",
   "block.bambooblocks.bamboo_ladder": "Escalera de mano de bambú",
   "block.bambooblocks.horizontal_bamboo_planks": "Madera horizontal de bambú",
-  "block.bambooblocks.bamboo_chest": "Cofre de bambú",
   "block.bambooblocks.trapped_bamboo_chest": "Cofre trampa de bambú",
   "block.bambooblocks.bamboo_vertical_slab": "Losa vertical de bambú",
-  "block.bambooblocks.reed_thatch_vertical_slab": "Losa vertical de paja de junco",
+  "block.bambooblocks.reed_thatch_vertical_slab": "Losa vertical de cañas",
   "block.bambooblocks.bamboo_bookshelf": "Estante de libros de bambú",
+  "block.bambooblocks.bamboo_sign": "Letrero de bambú",
 
   "item.bambooblocks.bamboo_boat": "Bote de bambú"
 }
