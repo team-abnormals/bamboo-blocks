@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = 'v1.4.0'
+version = '1.4.1'
 group = 'com.pugz.bambooblocks'
 archivesBaseName = 'Bamboo-Blocks-1.15.2'
 
@@ -60,6 +60,6 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.15.2-31.1.30'
-    compile fg.deobf("curse.maven:abnormals-core:2957837")
+    minecraft 'net.minecraftforge:forge:1.15.2-31.1.46'
+    compile fg.deobf("curse.maven:abnormals-core:2979730")
 }

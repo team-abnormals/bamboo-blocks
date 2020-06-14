@@ -3,6 +3,8 @@ package com.pugz.bambooblocks.core;
 import com.mojang.datafixers.util.Pair;
 import com.pugz.bambooblocks.common.block.BambooTorchBlock;
 import com.pugz.bambooblocks.common.block.BambooWallTorchBlock;
+import com.teamabnormals.abnormals_core.common.blocks.AbnormalsLadderBlock;
+import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
 import com.teamabnormals.abnormals_core.common.blocks.BookshelfBlock;
 import com.teamabnormals.abnormals_core.common.blocks.VerticalSlabBlock;
 import com.teamabnormals.abnormals_core.common.blocks.sign.AbnormalsStandingSignBlock;
@@ -22,11 +24,9 @@ import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerPotBlock;
-import net.minecraft.block.LadderBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.client.renderer.RenderType;
@@ -58,11 +58,11 @@ public class BambooBlocksRegistry {
 	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> SIGNS = HELPER.createSignBlock("bamboo", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> REED_THATCH = HELPER.createBlock("reed_thatch", () -> new Block(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> REED_THATCH_STAIRS = HELPER.createBlock("reed_thatch_stairs", () -> new StairsBlock(REED_THATCH.get().getDefaultState(), Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> REED_THATCH_STAIRS = HELPER.createBlock("reed_thatch_stairs", () -> new AbnormalsStairsBlock(REED_THATCH.get().getDefaultState(), Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REED_THATCH_SLAB = HELPER.createBlock("reed_thatch_slab", () -> new SlabBlock(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
 
 	// quark
-	public static final RegistryObject<Block> BAMBOO_LADDER = HELPER.createCompatBlock("quark", "bamboo_ladder", () -> new LadderBlock(Properties.LADDER), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BAMBOO_LADDER = HELPER.createCompatBlock("quark", "bamboo_ladder", () -> new AbnormalsLadderBlock(Properties.LADDER), ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> HORIZONTAL_BAMBOO_PLANKS = HELPER.createCompatBlock("quark", "horizontal_bamboo_planks", () -> new Block(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> VERTICAL_BAMBOO_SLAB = HELPER.createCompatBlock("quark", "bamboo_vertical_slab", () -> new VerticalSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> VERTICAL_REED_THATCH_SLAB = HELPER.createCompatBlock("quark", "reed_thatch_vertical_slab", () -> new VerticalSlabBlock(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
