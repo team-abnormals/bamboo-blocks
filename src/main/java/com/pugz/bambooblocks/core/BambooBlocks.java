@@ -40,6 +40,8 @@ public class BambooBlocks {
     }
 
 	private void setupClient(final FMLClientSetupEvent event) {
-		BambooBlocksRegistry.registerRenderLayers();
+		DeferredWorkQueue.runLater(() -> {
+			BambooBlocksRegistry.registerRenderLayers();
+		});
 	}
 }
