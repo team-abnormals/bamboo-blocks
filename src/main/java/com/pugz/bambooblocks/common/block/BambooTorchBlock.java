@@ -72,7 +72,7 @@ public class BambooTorchBlock extends TorchBlock {
 		return hasEnoughSolidSide(worldIn, pos.down(), Direction.UP) || downState.getBlock() instanceof LeavesBlock || downState.getBlock() instanceof BambooBlock;
 	}
 
-    public Vector3d getOffset(IBlockReader access, BlockPos pos) {
+	public Vector3d getOffset(IBlockReader access, BlockPos pos) {
 		BlockState downState = access.getBlockState(pos.down());
 		Block.OffsetType block$offsettype = getOffsetType();
 		if (downState.getBlock() instanceof BambooBlock) {
@@ -136,11 +136,10 @@ public class BambooTorchBlock extends TorchBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
-	    IBlockReader reader = worldIn.getBlockReader(pos.getX(), pos.getZ());
 		double d0 = (double) pos.getX() + 0.5D;
 		double d1 = (double) pos.getY() + 0.9D;
 		double d2 = (double) pos.getZ() + 0.5D;
-		worldIn.addParticle(ParticleTypes.SMOKE, d0 + getOffset(reader, pos).x, d1, d2 + getOffset(reader, pos).z, 0.0D, 0.0D, 0.0D);
-		worldIn.addParticle(this.field_235607_e_, d0 + getOffset(reader, pos).x, d1, d2 + getOffset(reader, pos).z, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(this.field_235607_e_, d0, d1, d2, 0.0D, 0.0D, 0.0D);
 	}
 }
