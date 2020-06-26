@@ -5,12 +5,12 @@ import java.util.Random;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
-import com.pugz.bambooblocks.core.BambooBlocksRegistry;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.WallTorchBlock;
+import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
@@ -30,8 +30,8 @@ public class BambooWallTorchBlock extends WallTorchBlock {
 			Direction.WEST, Block.makeCuboidShape(11.0D, 3.0D, 5.5D, 16.0D, 16.0D, 10.5D), 
 			Direction.EAST, Block.makeCuboidShape(0.0D, 3.0D, 5.5D, 5.0D, 16.0D, 10.5D)));
 
-	public BambooWallTorchBlock() {
-		super(BambooBlocksRegistry.Properties.BAMBOO_TORCH);
+	public BambooWallTorchBlock(Block.Properties properties, IParticleData particle) {
+		super(properties, particle);
 	}
 
 	@Override
@@ -59,6 +59,6 @@ public class BambooWallTorchBlock extends WallTorchBlock {
 		double d2 = (double) pos.getZ() + 0.5D;
 		Direction direction1 = direction.getOpposite();
 		worldIn.addParticle(ParticleTypes.SMOKE, d0 + 0.18D * (double) direction1.getXOffset(), d1 + 0.22D, d2 + 0.18D * (double) direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
-		worldIn.addParticle(ParticleTypes.FLAME, d0 + 0.18D * (double) direction1.getXOffset(), d1 + 0.22D, d2 + 0.18D * (double) direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(this.field_235607_e_, d0 + 0.18D * (double) direction1.getXOffset(), d1 + 0.22D, d2 + 0.18D * (double) direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
 	}
 }

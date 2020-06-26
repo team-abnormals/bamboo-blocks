@@ -6,9 +6,9 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.pugz.bambooblocks.core.BambooBlocksRegistry;
 import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
 
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BambooBlock;
 import net.minecraft.block.BambooSaplingBlock;
 import net.minecraft.block.Block;
@@ -20,6 +20,7 @@ import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
@@ -28,10 +29,10 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
@@ -44,8 +45,8 @@ public class BambooTorchBlock extends TorchBlock {
 	protected static final VoxelShape TORCH_LARGE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 14.0D, 12.0D);
 	protected static final IntegerProperty SIZE = IntegerProperty.create("size", 0, 2);
 
-	public BambooTorchBlock() {
-		super(BambooBlocksRegistry.Properties.BAMBOO_TORCH);
+	public BambooTorchBlock(Block.Properties properties, IParticleData particle) {
+		super(properties, particle);
 		setDefaultState(stateContainer.getBaseState().with(SIZE, 0));
 	}
 
@@ -71,20 +72,19 @@ public class BambooTorchBlock extends TorchBlock {
 		return hasEnoughSolidSide(worldIn, pos.down(), Direction.UP) || downState.getBlock() instanceof LeavesBlock || downState.getBlock() instanceof BambooBlock;
 	}
 
-	@Override
-	public Vec3d getOffset(BlockState state, IBlockReader world, BlockPos pos) {
-		BlockState downState = world.getBlockState(pos.down());
+    public Vector3d getOffset(IBlockReader access, BlockPos pos) {
+		BlockState downState = access.getBlockState(pos.down());
 		Block.OffsetType block$offsettype = getOffsetType();
 		if (downState.getBlock() instanceof BambooBlock) {
 			long i = MathHelper.getCoordinateRandom(pos.getX(), 0, pos.getZ());
-			return new Vec3d(((double) ((float) (i & 15L) / 15.0F) - 0.5D) * 0.5D, block$offsettype == Block.OffsetType.XYZ ? ((double) ((float) (i >> 4 & 15L) / 15.0F) - 1.0D) * 0.2D : 0.0D,
+			return new Vector3d(((double) ((float) (i & 15L) / 15.0F) - 0.5D) * 0.5D, block$offsettype == Block.OffsetType.XYZ ? ((double) ((float) (i >> 4 & 15L) / 15.0F) - 1.0D) * 0.2D : 0.0D,
 					((double) ((float) (i >> 8 & 15L) / 15.0F) - 0.5D) * 0.5D);
 		}
-		return Vec3d.ZERO;
+		return Vector3d.ZERO;
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
+    public AbstractBlock.OffsetType getOffsetType() {
 		return Block.OffsetType.XZ;
 	}
 
@@ -92,7 +92,7 @@ public class BambooTorchBlock extends TorchBlock {
 	public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
 		BlockState downState = worldIn.getBlockState(pos.down());
 		if (downState.getBlock() instanceof BambooBlock) {
-			Vec3d vec3d = downState.getOffset(worldIn, pos);
+            Vector3d vec3d = downState.getOffset(worldIn, pos);
 			return state.get(SIZE) < 2 ? TORCH.withOffset(vec3d.x, vec3d.y, vec3d.z) : TORCH_LARGE.withOffset(vec3d.x, vec3d.y, vec3d.z);
 		} else {
 			return state.get(SIZE) < 2 ? TORCH : TORCH_LARGE;
@@ -136,10 +136,11 @@ public class BambooTorchBlock extends TorchBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
+	    IBlockReader reader = worldIn.getBlockReader(pos.getX(), pos.getZ());
 		double d0 = (double) pos.getX() + 0.5D;
 		double d1 = (double) pos.getY() + 0.9D;
 		double d2 = (double) pos.getZ() + 0.5D;
-		worldIn.addParticle(ParticleTypes.SMOKE, d0 + getOffset(state, worldIn, pos).x, d1, d2 + getOffset(state, worldIn, pos).z, 0.0D, 0.0D, 0.0D);
-		worldIn.addParticle(ParticleTypes.FLAME, d0 + getOffset(state, worldIn, pos).x, d1, d2 + getOffset(state, worldIn, pos).z, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(ParticleTypes.SMOKE, d0 + getOffset(reader, pos).x, d1, d2 + getOffset(reader, pos).z, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(this.field_235607_e_, d0 + getOffset(reader, pos).x, d1, d2 + getOffset(reader, pos).z, 0.0D, 0.0D, 0.0D);
 	}
 }

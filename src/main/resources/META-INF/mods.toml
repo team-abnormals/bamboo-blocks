@@ -1,8 +1,8 @@
 modLoader="javafml"
-loaderVersion="[31,]"
+loaderVersion="[32,]"
 logoFile="logo.png"
-authors="Pugz & bageldotjpg"
-credits="*Endergized*"
+authors="bageldotjpg"
+credits="Pugz & Endergized"
 
 [[mods]]
     modId="bambooblocks"
@@ -14,20 +14,20 @@ credits="*Endergized*"
 [[dependencies.bambooblocks]]
     modId="forge"
     mandatory=true
-    versionRange="[31.1.46,)"
+    versionRange="[32.0.7,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.bambooblocks]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.16.1,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.bambooblocks]]
     modId="abnormals_core"
     mandatory=true
-    versionRange="[1.0.6,)"
+    versionRange="[2.0.0,)"
     ordering="AFTER"
     side="BOTH"
