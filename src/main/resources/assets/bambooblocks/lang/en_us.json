@@ -18,7 +18,12 @@
   "block.bambooblocks.bamboo_vertical_slab": "Bamboo Vertical Slab",
   "block.bambooblocks.reed_thatch_vertical_slab": "Reed Thatch Vertical Slab",
   "block.bambooblocks.bamboo_bookshelf": "Bamboo Bookshelf",
+  
   "block.bambooblocks.bamboo_sign": "Bamboo Sign",
+  "block.bambooblocks.bamboo_wall_sign": "Bamboo Wall Sign",
+  
+  "block.bambooblocks.bamboo_chest": "Bamboo Chest",
+  "block.bambooblocks.bamboo_trapped_chest": "Bamboo Trapped Chest",
 
   "item.bambooblocks.bamboo_boat": "Bamboo Boat"
 }
