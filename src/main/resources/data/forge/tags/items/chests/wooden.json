@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bambooblocks:bamboo_chest",
-    "bambooblocks:bamboo_trapped_chest"
+    "bamboo_blocks:bamboo_chest",
+    "bamboo_blocks:bamboo_trapped_chest"
   ]
 }

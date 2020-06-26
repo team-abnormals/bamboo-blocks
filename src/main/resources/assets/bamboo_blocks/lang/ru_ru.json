@@ -1,0 +1,23 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Бамбуковый факел",
+  "block.bamboo_blocks.bamboo_planks": "Бамбуковые доски",
+  "block.bamboo_blocks.bamboo_stairs": "Бамбуковые ступеньки",
+  "block.bamboo_blocks.bamboo_slab": "Бамбуковая плита",
+  "block.bamboo_blocks.bamboo_fence": "Бамбуковый забор",
+  "block.bamboo_blocks.bamboo_fence_gate": "Бамбуковая калитка",
+  "block.bamboo_blocks.bamboo_door": "Бамбуковая дверь",
+  "block.bamboo_blocks.bamboo_trapdoor": "Бамбуковый люк",
+  "block.bamboo_blocks.bamboo_button": "Бамбуковая кнопка",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Нажимная пластина",
+  "block.bamboo_blocks.reed_thatch": "Солома",
+  "block.bamboo_blocks.reed_thatch_stairs": "Соломенные ступеньки",
+  "block.bamboo_blocks.reed_thatch_slab": "Соломенная плита",
+  "block.bamboo_blocks.bamboo_ladder": "Бамбуковая лестница",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Горизотнальные бамбуковые доски",
+  "block.bamboo_blocks.bamboo_chest": "Бамбуковый сундук",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Бумбуковый сундук-ловушка",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Вертикальная бамбуковая плита",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Вертикальная соломенная плита",
+
+  "item.bamboo_blocks.bamboo_boat": "Бамбуковая лодка"
+}

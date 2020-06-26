@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "bamboo_blocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bamboo_blocks:bamboo_pressure_plate"
+  }
+}

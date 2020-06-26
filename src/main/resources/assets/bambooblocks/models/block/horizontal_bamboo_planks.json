@@ -1,6 +1,0 @@
-{
-    "parent": "bambooblocks:block/vertical_planks",
-    "textures": {
-        "all": "bambooblocks:block/bamboo_planks"
-    }
-}

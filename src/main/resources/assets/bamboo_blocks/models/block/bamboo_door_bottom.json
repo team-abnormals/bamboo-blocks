@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "bamboo_blocks:block/bamboo_door_bottom",
+        "top": "bamboo_blocks:block/bamboo_door_top"
+    }
+}

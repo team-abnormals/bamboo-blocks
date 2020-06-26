@@ -1,0 +1,15 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Tocha de Bambu",
+  "block.bamboo_blocks.bamboo_planks": "Tábuas de Bambu",
+  "block.bamboo_blocks.bamboo_stairs": "Escadas de Bambu",
+  "block.bamboo_blocks.bamboo_slab": "Degrau de Bambu",
+  "block.bamboo_blocks.bamboo_fence": "Cerca de Bambu",
+  "block.bamboo_blocks.bamboo_fence_gate": "Portão de Bambu",
+  "block.bamboo_blocks.bamboo_door": "Porta de Bambu",
+  "block.bamboo_blocks.bamboo_trapdoor": "Alçapão de Bambu",
+  "block.bamboo_blocks.bamboo_button": "Botão de Bambu",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Placa de Pressão de Bambu",
+  "block.bamboo_blocks.reed_thatch": "Colmo",
+  "block.bamboo_blocks.reed_thatch_stairs": "Escadas de colmo",
+  "block.bamboo_blocks.reed_thatch_slab": "Degrau de colmo"
+}

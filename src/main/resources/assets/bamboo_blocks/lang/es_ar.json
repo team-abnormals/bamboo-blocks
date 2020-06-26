@@ -1,0 +1,24 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Antorcha de bambú",
+  "block.bamboo_blocks.bamboo_planks": "Madera de bambú",
+  "block.bamboo_blocks.bamboo_stairs": "Escaleras de bambú",
+  "block.bamboo_blocks.bamboo_slab": "Baldosa de bambú",
+  "block.bamboo_blocks.bamboo_fence": "Valla de bambú",
+  "block.bamboo_blocks.bamboo_fence_gate": "Puerta de valla de bambú",
+  "block.bamboo_blocks.bamboo_door": "Puerta de bambú",
+  "block.bamboo_blocks.bamboo_trapdoor": "Escotilla de bambú",
+  "block.bamboo_blocks.bamboo_button": "Botón de bambú",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Placa de presión de bambú",
+  "block.bamboo_blocks.reed_thatch": "Cubierta de cañas",
+  "block.bamboo_blocks.reed_thatch_stairs": "Escaleras de cañas",
+  "block.bamboo_blocks.reed_thatch_slab": "Baldosa de cañas",
+  "block.bamboo_blocks.bamboo_ladder": "Escalera de bambú",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Madera horizontal de bambú",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Cofre con trampa de bambú",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Baldosa vertical de bambú",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Baldosa vertical de cañas",
+  "block.bamboo_blocks.bamboo_bookshelf": "Biblioteca de bambú",
+  "block.bamboo_blocks.bamboo_sign": "Cartel de bambú",
+
+  "item.bamboo_blocks.bamboo_boat": "Bote de bambú"
+}

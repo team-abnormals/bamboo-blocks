@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "bambooblocks:block/reed_thatch_slab" },
-        "type=top": { "model": "bambooblocks:block/reed_thatch_slab_top" },
-        "type=double": { "model": "bambooblocks:block/reed_thatch" }
-    }
-}

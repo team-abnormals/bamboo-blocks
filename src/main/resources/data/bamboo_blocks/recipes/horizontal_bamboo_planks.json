@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "B",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "bamboo_blocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bamboo_blocks:horizontal_bamboo_planks",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "vertical_planks"
+    }
+  ]
+}

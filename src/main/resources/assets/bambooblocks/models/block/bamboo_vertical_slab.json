@@ -1,8 +1,0 @@
-{
-    "parent": "bambooblocks:block/vertical_slab",
-    "textures": {
-        "side": "bambooblocks:block/bamboo_planks",
-        "top": "bambooblocks:block/bamboo_planks",
-        "bottom": "bambooblocks:block/bamboo_planks"
-    }
-}

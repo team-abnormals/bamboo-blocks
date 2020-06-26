@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bamboo_blocks",
+  "pattern":
+  [
+    "P P",
+    "PPP"
+  ],
+  "key":
+  {
+    "P":
+    {
+      "item": "bamboo_blocks:bamboo_planks"
+    }
+  },
+  "result":
+  {
+    "item": "bamboo_blocks:bamboo_boat"
+  }
+}

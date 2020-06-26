@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "bamboo_blocks:bamboo_planks"
+    }
+  },
+  "result": {
+    "item": "bamboo_blocks:bamboo_trapdoor",
+    "count": 2
+  }
+}

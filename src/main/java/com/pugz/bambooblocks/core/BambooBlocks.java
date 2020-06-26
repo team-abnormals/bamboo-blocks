@@ -15,7 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(BambooBlocks.MODID)
 public class BambooBlocks {
 
-	public static final String MODID = "bambooblocks";
+	public static final String MODID = "bamboo_blocks";
 	public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MODID);
 
 	public BambooBlocks() {

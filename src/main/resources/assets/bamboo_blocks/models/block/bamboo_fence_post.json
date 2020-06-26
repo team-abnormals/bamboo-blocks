@@ -1,0 +1,6 @@
+{
+    "parent": "block/fence_post",
+    "textures": {
+        "texture": "bamboo_blocks:block/bamboo_planks"
+    }
+}

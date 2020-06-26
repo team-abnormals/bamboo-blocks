@@ -1,0 +1,6 @@
+{
+    "parent": "block/button",
+    "textures": {
+        "texture": "bamboo_blocks:block/bamboo_planks"
+    }
+}

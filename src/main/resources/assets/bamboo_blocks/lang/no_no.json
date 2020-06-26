@@ -1,0 +1,15 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Bambus-fakkel",
+  "block.bamboo_blocks.bamboo_planks": "Bambusplanker",
+  "block.bamboo_blocks.bamboo_stairs": "Bambustrapp",
+  "block.bamboo_blocks.bamboo_slab": "Bambushelle",
+  "block.bamboo_blocks.bamboo_fence": "Bambusgjerde",
+  "block.bamboo_blocks.bamboo_fence_gate": "Bambusgrind",
+  "block.bamboo_blocks.bamboo_door": "Bambusdør",
+  "block.bamboo_blocks.bamboo_trapdoor": "Bambusfallem",
+  "block.bamboo_blocks.bamboo_button": "Bambusknapp",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Bambustrykkeplate",
+  "block.bamboo_blocks.reed_thatch": "Strå",
+  "block.bamboo_blocks.reed_thatch_stairs": "Stråtrapp",
+  "block.bamboo_blocks.reed_thatch_slab": "Stråhelle"
+}

@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "type=bottom": { "model": "bambooblocks:block/bamboo_slab" },
-        "type=top": { "model": "bambooblocks:block/bamboo_slab_top" },
-        "type=double": { "model": "bambooblocks:block/bamboo_planks" }
-    }
-}

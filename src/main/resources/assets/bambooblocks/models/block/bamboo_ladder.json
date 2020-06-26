@@ -1,8 +1,0 @@
-{
-    "parent": "block/ladder",
-    "ambientocclusion": false,
-    "textures": {
-        "particle": "bambooblocks:block/bamboo_ladder",
-        "texture": "bambooblocks:block/bamboo_ladder"
-    }
-}

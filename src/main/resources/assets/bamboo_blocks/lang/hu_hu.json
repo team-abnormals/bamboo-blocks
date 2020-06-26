@@ -1,0 +1,15 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Bambusz Fáklya",
+  "block.bamboo_blocks.bamboo_planks": "Bambusz Deszka",
+  "block.bamboo_blocks.bamboo_stairs": "Bambusz Lépcső",
+  "block.bamboo_blocks.bamboo_slab": "Bambusz Lap",
+  "block.bamboo_blocks.bamboo_fence": "Bambusz Kerítés",
+  "block.bamboo_blocks.bamboo_fence_gate": "Bambusz Kerítés Kapu",
+  "block.bamboo_blocks.bamboo_door": "Bambusz Ajtó",
+  "block.bamboo_blocks.bamboo_trapdoor": "Bambusz Csapóajtó",
+  "block.bamboo_blocks.bamboo_button": "Bambusz Gomb",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Bambusz Nyomólap",
+  "block.bamboo_blocks.reed_thatch": "Nádtető",
+  "block.bamboo_blocks.reed_thatch_stairs": "Nádtető lépcső",
+  "block.bamboo_blocks.reed_thatch_slab": "Nádtető lap"
+}

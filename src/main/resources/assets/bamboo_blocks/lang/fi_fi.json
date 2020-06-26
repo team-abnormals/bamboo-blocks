@@ -1,0 +1,24 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Bambusoihtu",
+  "block.bamboo_blocks.bamboo_planks": "Bambulankut",
+  "block.bamboo_blocks.bamboo_stairs": "Bambuportaat",
+  "block.bamboo_blocks.bamboo_slab": "Bambulaatta",
+  "block.bamboo_blocks.bamboo_fence": "Bambuaita",
+  "block.bamboo_blocks.bamboo_fence_gate": "Bambuportti",
+  "block.bamboo_blocks.bamboo_door": "Bambuovi",
+  "block.bamboo_blocks.bamboo_trapdoor": "Bambuluukku",
+  "block.bamboo_blocks.bamboo_button": "Bambunappi",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Bambupainelaatta",
+  "block.bamboo_blocks.reed_thatch": "Ruokokuutio",
+  "block.bamboo_blocks.reed_thatch_stairs": "Ruokoportaat",
+  "block.bamboo_blocks.reed_thatch_slab": "Ruokolaatta",
+  "block.bamboo_blocks.bamboo_ladder": "Bambutikas",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Pystysuorat bambulankut",
+  "block.bamboo_blocks.bamboo_chest": "Bambuarkku",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Ansoitettu bambuarkku",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Pystysuora bambulaatta",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Pystysuora ruokolaatta",
+  "block.bamboo_blocks.bamboo_bookshelf": "Bambukirjahylly",
+
+  "item.bamboo_blocks.bamboo_boat": "Bambuvene"
+}

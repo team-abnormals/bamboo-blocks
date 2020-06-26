@@ -1,0 +1,15 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Bambusfackel",
+  "block.bamboo_blocks.bamboo_planks": "Bambusplanken",
+  "block.bamboo_blocks.bamboo_stairs": "Bambustreppen",
+  "block.bamboo_blocks.bamboo_slab": "Bambusplatte",
+  "block.bamboo_blocks.bamboo_fence": "Bambuszaun",
+  "block.bamboo_blocks.bamboo_fence_gate": "Bambuszaun-Tor",
+  "block.bamboo_blocks.bamboo_door": "Bambustür",
+  "block.bamboo_blocks.bamboo_trapdoor": "Bambus-Falltür",
+  "block.bamboo_blocks.bamboo_button": "Bambus-Taste",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Bambus-Druckplatte",
+  "block.bamboo_blocks.reed_thatch": "Thatch",
+  "block.bamboo_blocks.reed_thatch_stairs": "Thatchtreppen",
+  "block.bamboo_blocks.reed_thatch_slab": "Thatchplatte"
+}

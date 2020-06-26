@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "size=0": { "model": "bamboo_blocks:block/template_torch" },
+    "size=1": { "model": "bamboo_blocks:block/template_torch" },
+    "size=2": { "model": "bamboo_blocks:block/template_torch_large" }
+  }
+}
