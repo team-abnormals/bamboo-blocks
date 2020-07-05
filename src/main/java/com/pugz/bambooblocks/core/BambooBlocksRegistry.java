@@ -3,6 +3,7 @@ package com.pugz.bambooblocks.core;
 import com.mojang.datafixers.util.Pair;
 import com.pugz.bambooblocks.common.block.BambooTorchBlock;
 import com.pugz.bambooblocks.common.block.BambooWallTorchBlock;
+import com.teamabnormals.abnormals_core.common.blocks.AbnormalsBeehiveBlock;
 import com.teamabnormals.abnormals_core.common.blocks.AbnormalsLadderBlock;
 import com.teamabnormals.abnormals_core.common.blocks.AbnormalsStairsBlock;
 import com.teamabnormals.abnormals_core.common.blocks.BookshelfBlock;
@@ -57,20 +58,20 @@ public class BambooBlocksRegistry {
 	public static final RegistryObject<Block> BAMBOO_TRAPDOOR = HELPER.createBlock("bamboo_trapdoor", () -> new WoodTrapDoorBlock(Properties.BAMBOO_DOORS), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> BAMBOO_BUTTON = HELPER.createBlock("bamboo_button", () -> new AbnormalsWoodButtonBlock(Block.Properties.from(Blocks.OAK_BUTTON)), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> BAMBOO_PRESSURE_PLATE = HELPER.createBlock("bamboo_pressure_plate", () -> new WoodPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(Blocks.OAK_PRESSURE_PLATE)), ItemGroup.REDSTONE);
-	public static final RegistryObject<Item> BAMBOO_BOAT = HELPER.createBoatItem("bamboo", BAMBOO_PLANKS);
+	public static final RegistryObject<Item>  BAMBOO_BOAT = HELPER.createBoatItem("bamboo", BAMBOO_PLANKS);
+	public static final RegistryObject<Block> BAMBOO_LADDER = HELPER.createCompatBlock("quark", "bamboo_ladder", () -> new AbnormalsLadderBlock(Properties.LADDER), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> HORIZONTAL_BAMBOO_PLANKS = HELPER.createCompatBlock("quark", "horizontal_bamboo_planks", () -> new Block(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> VERTICAL_BAMBOO_SLAB = HELPER.createCompatBlock("quark", "bamboo_vertical_slab", () -> new VerticalSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> BAMBOO_BOOKSHELF = HELPER.createCompatBlock("quark", "bamboo_bookshelf", () -> new BookshelfBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> BAMBOO_BEEHIVE	= HELPER.createCompatBlock("buzzier_bees", "bamboo_beehive", () -> new AbnormalsBeehiveBlock(Block.Properties.from(Blocks.BEEHIVE)), ItemGroup.DECORATIONS);
+
 	public static final Pair<RegistryObject<AbnormalsStandingSignBlock>, RegistryObject<AbnormalsWallSignBlock>> BAMBOO_SIGNS = HELPER.createSignBlock("bamboo", MaterialColor.WOOD);
+	public static final Pair<RegistryObject<AbnormalsChestBlock>, RegistryObject<AbnormalsTrappedChestBlock>> BAMBOO_CHESTS = HELPER.createCompatChestBlocks("bamboo", MaterialColor.WOOD);
 
 	public static final RegistryObject<Block> REED_THATCH = HELPER.createBlock("reed_thatch", () -> new Block(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REED_THATCH_STAIRS = HELPER.createBlock("reed_thatch_stairs", () -> new AbnormalsStairsBlock(REED_THATCH.get().getDefaultState(), Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> REED_THATCH_SLAB = HELPER.createBlock("reed_thatch_slab", () -> new SlabBlock(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
-
-	// quark
-	public static final RegistryObject<Block> BAMBOO_LADDER = HELPER.createCompatBlock("quark", "bamboo_ladder", () -> new AbnormalsLadderBlock(Properties.LADDER), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> HORIZONTAL_BAMBOO_PLANKS = HELPER.createCompatBlock("quark", "horizontal_bamboo_planks", () -> new Block(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> VERTICAL_BAMBOO_SLAB = HELPER.createCompatBlock("quark", "bamboo_vertical_slab", () -> new VerticalSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> VERTICAL_REED_THATCH_SLAB = HELPER.createCompatBlock("quark", "reed_thatch_vertical_slab", () -> new VerticalSlabBlock(Properties.REED_THATCH), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> BAMBOO_BOOKSHELF = HELPER.createCompatBlock("quark", "bamboo_bookshelf", () -> new BookshelfBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
-	public static final Pair<RegistryObject<AbnormalsChestBlock>, RegistryObject<AbnormalsTrappedChestBlock>> BAMBOO_CHESTS = HELPER.createCompatChestBlocks("bamboo", MaterialColor.WOOD);
 
 	public static void registerFlammables() {
 		DataUtils.registerFlammable(BAMBOO_PLANKS.get(), 5, 20);
