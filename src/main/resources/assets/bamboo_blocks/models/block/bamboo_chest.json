@@ -1,5 +1,5 @@
 {
     "textures": {
-        "particle": "upgrade_aquatic:block/river_planks"
+        "particle": "bamboo_blocks:block/bamboo_planks"
     }
 }

@@ -30,6 +30,7 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorldReader;
@@ -83,7 +84,10 @@ public class BambooTorchBlock extends TorchBlock {
 
 	@Override
 	public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-		return state.get(SIZE) < 2 ? TORCH : TORCH_LARGE;
+		if (worldIn.getBlockState(pos.down()).getBlock() instanceof BambooBlock) {
+			return state.get(SIZE) < 2 ? TORCH : TORCH_LARGE;
+		}
+		return VoxelShapes.empty();
 	}
 
 	@Nullable
