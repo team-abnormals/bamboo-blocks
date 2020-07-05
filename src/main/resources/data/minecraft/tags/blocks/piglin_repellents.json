@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "bamboo_blocks:bamboo_soul_torch",
-    "bamboo_blocks:bamboo_soul_wall_torch",
-    "bamboo_blocks:potted_bamboo_soul_torch"
+    "bamboo_blocks:soul_bamboo_torch",
+    "bamboo_blocks:soul_bamboo_wall_torch",
+    "bamboo_blocks:potted_soul_bamboo_torch"
   ]
 }

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bamboo_blocks:bamboo_soul_torch"
+          "name": "bamboo_blocks:soul_bamboo_torch"
         }
       ],
       "conditions": [

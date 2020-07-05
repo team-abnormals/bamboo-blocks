@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"torch": "bamboo_blocks:block/bamboo_soul_torch_size1_leaves",
+		"torch": "bamboo_blocks:block/soul_bamboo_torch_size1_leaves",
 		"particle": "#torch"
 	},
 	"elements": [

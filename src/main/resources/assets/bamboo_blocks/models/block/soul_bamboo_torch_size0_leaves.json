@@ -1,14 +1,13 @@
 {
     "ambientocclusion": false,
 	"textures": {
-		"torch": "bamboo_blocks:block/bamboo_soul_torch_size0",
+		"torch": "bamboo_blocks:block/soul_bamboo_torch_size0_leaves",
 		"particle": "#torch"
 	},
 	"elements": [
 		{
 			"from": [7, 0, 7],
 			"to": [9, 14, 9],
-			"shade": false,
 			"faces": {
 				"north": {"uv": [7, 2, 9, 16], "texture": "#torch"},
 				"east": {"uv": [7, 2, 9, 16], "texture": "#torch"},
@@ -21,7 +20,6 @@
 		{
 			"from": [8, 0, 0],
 			"to": [8, 11, 16],
-			"shade": false,
 			"faces": {
 				"north": {"uv": [0, 0, 0, 16], "texture": "#torch"},
 				"east": {"uv": [0, 5, 16, 16], "texture": "#torch"},
@@ -34,7 +32,6 @@
 		{
 			"from": [0, 0, 8],
 			"to": [16, 11, 8],
-			"shade": false,
 			"faces": {
 				"north": {"uv": [0, 5, 16, 16], "texture": "#torch"},
 				"east": {"uv": [0, 0, 0, 16], "texture": "#torch"},

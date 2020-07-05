@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "size=0,leaves=false": { "model": "bamboo_blocks:block/soul_bamboo_torch_size0" },
+    "size=0,leaves=true": { "model": "bamboo_blocks:block/soul_bamboo_torch_size0_leaves" },
+    "size=1,leaves=false": { "model": "bamboo_blocks:block/soul_bamboo_torch_size1" },
+    "size=1,leaves=true": { "model": "bamboo_blocks:block/soul_bamboo_torch_size1_leaves" }
+  }
+}

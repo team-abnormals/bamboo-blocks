@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "bamboo_blocks:block/bamboo_soul_torch_size0"
-    }
-}
