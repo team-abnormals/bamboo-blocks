@@ -47,11 +47,11 @@ public class BambooBlocksRegistry {
 
 	public static final RegistryObject<Block> BAMBOO_WALL_TORCH = HELPER.createBlockNoItem("bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME));
 	public static final RegistryObject<Block> BAMBOO_TORCH = HELPER.createWallOrFloorBlock("bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME), () -> BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> POTTED_BAMBOO_TORCH = HELPER.createBlockNoItem("potted_bamboo_torch", () -> new FlowerPotBlock(BAMBOO_TORCH.get(), Properties.FLOWER_POT_TORCH));
+	public static final RegistryObject<Block> POTTED_BAMBOO_TORCH = HELPER.createBlockNoItem("potted_bamboo_torch", () -> new FlowerPotBlock(BAMBOO_TORCH.get(), Properties.FLOWER_POT_BAMBOO_TORCH));
 
-	public static final RegistryObject<Block> SOUL_BAMBOO_WALL_TORCH = HELPER.createBlockNoItem("soul_bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.field_239811_B_));
-	public static final RegistryObject<Block> SOUL_BAMBOO_TORCH = HELPER.createWallOrFloorBlock("soul_bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.field_239811_B_), () -> SOUL_BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
-	public static final RegistryObject<Block> POTTED_SOUL_BAMBOO_TORCH = HELPER.createBlockNoItem("potted_soul_bamboo_torch", () -> new FlowerPotBlock(SOUL_BAMBOO_TORCH.get(), Properties.FLOWER_POT_TORCH));
+	public static final RegistryObject<Block> SOUL_BAMBOO_WALL_TORCH = HELPER.createBlockNoItem("soul_bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.SOUL_BAMBOO_TORCH, ParticleTypes.field_239811_B_));
+	public static final RegistryObject<Block> SOUL_BAMBOO_TORCH = HELPER.createWallOrFloorBlock("soul_bamboo_torch", () -> new BambooTorchBlock(Properties.SOUL_BAMBOO_TORCH, ParticleTypes.field_239811_B_), () -> SOUL_BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> POTTED_SOUL_BAMBOO_TORCH = HELPER.createBlockNoItem("potted_soul_bamboo_torch", () -> new FlowerPotBlock(SOUL_BAMBOO_TORCH.get(), Properties.FLOWER_POT_SOUL_BAMBOO_TORCH));
 
 	public static final RegistryObject<Block> BAMBOO_PLANKS = HELPER.createBlock("bamboo_planks", () -> new PlanksBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_STAIRS = HELPER.createBlock("bamboo_stairs", () -> new WoodStairsBlock(BAMBOO_PLANKS.get().getDefaultState(), Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -114,12 +114,14 @@ public class BambooBlocksRegistry {
 
 	public static class Properties {
 		public static final Block.Properties BAMBOO_TORCH = Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.BAMBOO).func_235838_a_((p_235470_0_) -> {return 14;});
+		public static final Block.Properties SOUL_BAMBOO_TORCH = Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.BAMBOO).func_235838_a_((p_235470_0_) -> {return 10;});
 		public static final Block.Properties BAMBOO_PLANKS = Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.25F, 3.5F).sound(SoundType.WOOD);
 		public static final Block.Properties BAMBOO_DOORS = Block.Properties.create(Material.WOOD, MaterialColor.WOOD).notSolid().hardnessAndResistance(3.25F).sound(SoundType.WOOD);
 		public static final Block.Properties REED_THATCH = Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(1.5F, 2.0F).sound(SoundType.PLANT);
 		public static final Block.Properties BAMBOO_BUTTON = Block.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().hardnessAndResistance(0.6F).sound(SoundType.WOOD);
 		public static final Block.Properties BAMBOO_PRESSURE_PLATE = Block.Properties.create(Material.WOOD).doesNotBlockMovement().hardnessAndResistance(0.6F).sound(SoundType.WOOD);
-		public static final Block.Properties FLOWER_POT_TORCH = Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(0.0F).func_235838_a_((p_235470_0_) -> {return 14;});
+		public static final Block.Properties FLOWER_POT_BAMBOO_TORCH = Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(0.0F).func_235838_a_((p_235470_0_) -> {return 14;});
+		public static final Block.Properties FLOWER_POT_SOUL_BAMBOO_TORCH = Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(0.0F).func_235838_a_((p_235470_0_) -> {return 10;});
 		public static final Block.Properties LADDER = Block.Properties.create(Material.MISCELLANEOUS).notSolid().hardnessAndResistance(0.4F).sound(SoundType.LADDER);
 	}
 
