@@ -82,13 +82,13 @@ public class BambooTorchBlock extends TorchBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
             Vector3d vec3d = state.getOffset(worldIn, pos);
-			return state.get(SIZE) < 2 ? TORCH.withOffset(vec3d.x, vec3d.y, vec3d.z) : TORCH_LARGE.withOffset(vec3d.x, vec3d.y, vec3d.z);
+			return state.get(SIZE) == 0 ? TORCH.withOffset(vec3d.x, vec3d.y, vec3d.z) : TORCH_LARGE.withOffset(vec3d.x, vec3d.y, vec3d.z);
 	}
 
 	@Override
 	public VoxelShape getCollisionShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
 		if (worldIn.getBlockState(pos.down()).getBlock() instanceof BambooBlock) {
-			return state.get(SIZE) < 2 ? TORCH : TORCH_LARGE;
+			return state.get(SIZE) == 0 ? TORCH : TORCH_LARGE;
 		}
 		return VoxelShapes.empty();
 	}
@@ -112,9 +112,10 @@ public class BambooTorchBlock extends TorchBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
-		double d0 = (double) pos.getX() + 0.5D;
-		double d1 = (double) pos.getY() + 0.9D;
-		double d2 = (double) pos.getZ() + 0.5D;
+		Vector3d offset = state.getOffset(worldIn.getBlockReader(pos.getX(), pos.getY()), pos);
+		double d0 = (double) pos.getX() + 0.5D + offset.getX();
+		double d1 = (double) pos.getY() + 0.9D + offset.getY();
+		double d2 = (double) pos.getZ() + 0.5D + offset.getZ();
 		worldIn.addParticle(ParticleTypes.SMOKE,d0, d1, d2, 0.0D, 0.0D, 0.0D);
 		worldIn.addParticle(this.field_235607_e_, d0, d1, d2, 0.0D, 0.0D, 0.0D);
 	}

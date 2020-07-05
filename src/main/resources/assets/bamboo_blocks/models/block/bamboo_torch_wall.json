@@ -1,7 +1,7 @@
 {
 	"ambientocclusion": false,
 	"textures": {
-		"torch": "bamboo_blocks:block/bamboo_torch",
+		"torch": "bamboo_blocks:block/bamboo_torch_size0",
 		"particle": "#torch"
 	},
 	"elements": [
