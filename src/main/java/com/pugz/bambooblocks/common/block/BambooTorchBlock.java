@@ -22,6 +22,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BambooLeaves;
@@ -42,11 +43,13 @@ public class BambooTorchBlock extends TorchBlock {
 
 	protected static final VoxelShape TORCH = Block.makeCuboidShape(5.5D, 0.0D, 5.5D, 10.5D, 14.0D, 10.5D);
 	protected static final VoxelShape TORCH_LARGE = Block.makeCuboidShape(4.0D, 0.0D, 4.0D, 12.0D, 14.0D, 12.0D);
-	protected static final IntegerProperty SIZE = IntegerProperty.create("size", 0, 2);
+	
+	protected static final IntegerProperty SIZE = IntegerProperty.create("size", 0, 1);
+	protected static final BooleanProperty LEAVES = BooleanProperty.create("leaves");
 
 	public BambooTorchBlock(Block.Properties properties, IParticleData particle) {
 		super(properties, particle);
-		setDefaultState(stateContainer.getBaseState().with(SIZE, 0));
+		this.setDefaultState(this.getStateContainer().getBaseState().with(SIZE, 0).with(LEAVES, false));
 	}
 
 	@Override
@@ -62,7 +65,7 @@ public class BambooTorchBlock extends TorchBlock {
 	}
 
 	protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-		builder.add(SIZE);
+		builder.add(SIZE, LEAVES);
 	}
 
 	@Override
@@ -97,24 +100,14 @@ public class BambooTorchBlock extends TorchBlock {
 		BlockPos pos = context.getPos();
 		BlockState downState = world.getBlockState(pos.down());
 		if (downState.getBlock() instanceof BambooBlock) {
-			return getDefaultState().with(SIZE, getSizeByBambooLeavesSize(downState.get(PROPERTY_BAMBOO_LEAVES)));
+			return this.getDefaultState()
+					.with(LEAVES, downState.get(PROPERTY_BAMBOO_LEAVES) != BambooLeaves.NONE ? true : false)
+					.with(SIZE, downState.get(BambooBlock.PROPERTY_AGE));
 		} else if (downState.getBlock() instanceof BambooSaplingBlock && context.getFace() == Direction.UP) {
 			world.setBlockState(pos.down(), Blocks.BAMBOO.getDefaultState(), 3);
-			return getDefaultState();
+			return this.getDefaultState();
 		}
-		return getDefaultState();
-	}
-
-	private int getSizeByBambooLeavesSize(BambooLeaves leaves) {
-		switch (leaves) {
-		case NONE:
-			return 0;
-		case SMALL:
-			return 1;
-		case LARGE:
-			return 2;
-		}
-		return 0;
+		return this.getDefaultState();
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -122,7 +115,7 @@ public class BambooTorchBlock extends TorchBlock {
 		double d0 = (double) pos.getX() + 0.5D;
 		double d1 = (double) pos.getY() + 0.9D;
 		double d2 = (double) pos.getZ() + 0.5D;
-		worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(ParticleTypes.SMOKE,d0, d1, d2, 0.0D, 0.0D, 0.0D);
 		worldIn.addParticle(this.field_235607_e_, d0, d1, d2, 0.0D, 0.0D, 0.0D);
 	}
 }
