@@ -18,7 +18,12 @@
   "block.bamboo_blocks.bamboo_vertical_slab": "Losa vertical de bambú",
   "block.bamboo_blocks.reed_thatch_vertical_slab": "Losa vertical de cañas",
   "block.bamboo_blocks.bamboo_bookshelf": "Librería de bambú",
+
   "block.bamboo_blocks.bamboo_sign": "Cartel de bambú",
+  "block.bamboo_blocks.bamboo_wall_sign": "Cartel de bambú en pared",
+  
+  "block.bamboo_blocks.bamboo_chest": "Cofre de bambú",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Cofre trampa de bambú",
 
   "item.bamboo_blocks.bamboo_boat": "Barca de bambú"
 }
