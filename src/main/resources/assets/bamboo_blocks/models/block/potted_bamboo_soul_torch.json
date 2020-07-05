@@ -1,7 +1,7 @@
 {
 	"ambientocclusion": false,
 	"textures": {
-		"bamboo": "bamboo_blocks:block/bamboo_torch_size0",
+		"bamboo": "bamboo_blocks:block/bamboo_soul_torch_size0",
 		"flowerpot": "block/flower_pot",
 		"particle": "block/flower_pot",
 		"dirt": "block/dirt"

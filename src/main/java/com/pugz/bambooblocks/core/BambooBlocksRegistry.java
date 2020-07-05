@@ -49,6 +49,10 @@ public class BambooBlocksRegistry {
 	public static final RegistryObject<Block> BAMBOO_TORCH = HELPER.createWallOrFloorBlock("bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME), () -> BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> POTTED_BAMBOO_TORCH = HELPER.createBlockNoItem("potted_bamboo_torch", () -> new FlowerPotBlock(BAMBOO_TORCH.get(), Properties.FLOWER_POT_TORCH));
 
+	public static final RegistryObject<Block> BAMBOO_SOUL_WALL_TORCH = HELPER.createBlockNoItem("bamboo_soul_wall_torch", () -> new BambooWallTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.field_239811_B_));
+	public static final RegistryObject<Block> BAMBOO_SOUL_TORCH = HELPER.createWallOrFloorBlock("bamboo_soul_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.field_239811_B_), () -> BAMBOO_SOUL_WALL_TORCH.get(), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> POTTED_BAMBOO_SOUL_TORCH = HELPER.createBlockNoItem("potted_bamboo_soul_torch", () -> new FlowerPotBlock(BAMBOO_SOUL_TORCH.get(), Properties.FLOWER_POT_TORCH));
+
 	public static final RegistryObject<Block> BAMBOO_PLANKS = HELPER.createBlock("bamboo_planks", () -> new PlanksBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_STAIRS = HELPER.createBlock("bamboo_stairs", () -> new WoodStairsBlock(BAMBOO_PLANKS.get().getDefaultState(), Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_SLAB = HELPER.createBlock("bamboo_slab", () -> new WoodSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -98,6 +102,10 @@ public class BambooBlocksRegistry {
 		RenderTypeLookup.setRenderLayer(BAMBOO_WALL_TORCH.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BAMBOO_TORCH.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(POTTED_BAMBOO_TORCH.get(), RenderType.getCutout());
+		
+		RenderTypeLookup.setRenderLayer(BAMBOO_SOUL_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(BAMBOO_SOUL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(POTTED_BAMBOO_SOUL_TORCH.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BAMBOO_DOOR.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BAMBOO_TRAPDOOR.get(), RenderType.getCutout());
