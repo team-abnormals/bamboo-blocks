@@ -1,5 +1,12 @@
 {
   "block.bamboo_blocks.bamboo_torch": "Antorcha de bambú",
+  "block.bamboo_blocks.bamboo_wall_torch": "Antorcha de bambú en pared",
+  "block.bamboo_blocks.potted_bamboo_torch": "Maceta con antorcha de bambú",
+
+  "block.bamboo_blocks.soul_bamboo_torch": "Antorcha de bambú de almas",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Antorcha de bambú de almas en pared",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Maceta con antorcha de bambú de almas",
+
   "block.bamboo_blocks.bamboo_planks": "Madera de bambú",
   "block.bamboo_blocks.bamboo_stairs": "Escaleras de bambú",
   "block.bamboo_blocks.bamboo_slab": "Losa de bambú",
@@ -21,9 +28,11 @@
 
   "block.bamboo_blocks.bamboo_sign": "Cartel de bambú",
   "block.bamboo_blocks.bamboo_wall_sign": "Cartel de bambú en pared",
-  
+
   "block.bamboo_blocks.bamboo_chest": "Cofre de bambú",
   "block.bamboo_blocks.bamboo_trapped_chest": "Cofre trampa de bambú",
+
+  "block.bamboo_blocks.bamboo_beehive": "Apiario de bambú",
 
   "item.bamboo_blocks.bamboo_boat": "Barca de bambú"
 }
