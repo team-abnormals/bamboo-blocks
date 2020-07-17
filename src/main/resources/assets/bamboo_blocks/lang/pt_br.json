@@ -1,0 +1,36 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Tocha de bambu",
+  "block.bamboo_blocks.bamboo_wall_torch": "Tocha de bambu na parede",
+  "block.bamboo_blocks.potted_bamboo_torch": "Tocha de bambu em um vaso",
+  
+  "block.bamboo_blocks.soul_bamboo_torch": "Tocha de bambu da alma",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Tocha de bambu da alma na parede",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Tocha de bambu da alma em um vaso",
+  
+  "block.bamboo_blocks.bamboo_planks": "Tábuas de bambu",
+  "block.bamboo_blocks.bamboo_stairs": "Escadas de bambu",
+  "block.bamboo_blocks.bamboo_slab": "Laje de bambu",
+  "block.bamboo_blocks.bamboo_fence": "Cerca de bambu",
+  "block.bamboo_blocks.bamboo_fence_gate": "Portão de bambu",
+  "block.bamboo_blocks.bamboo_door": "Porta de bambu",
+  "block.bamboo_blocks.bamboo_trapdoor": "Alçapão de bambu",
+  "block.bamboo_blocks.bamboo_button": "Botão de bambu",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Placa de pressão de bambu",
+  "block.bamboo_blocks.bamboo_sign": "Placa de bambu",
+  "block.bamboo_blocks.bamboo_wall_sign": "Placa de bambu na parede",
+  "block.bamboo_blocks.bamboo_ladder": "Escada de mão de bambu",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Tábuas horizontais de bambu",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Baú de bambu com armadilha",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Laje vertical de bambu",
+  "block.bamboo_blocks.bamboo_bookshelf": "Estante de livros de bambu",
+  "block.bamboo_blocks.bamboo_chest": "Baú de bambu",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Baú de bambu com armadilha",
+  "block.bamboo_blocks.bamboo_beehive": "Colmeia artificial de bambu",
+
+  "block.bamboo_blocks.reed_thatch": "Palha de junco",
+  "block.bamboo_blocks.reed_thatch_stairs": "Escadas de palha de junco",
+  "block.bamboo_blocks.reed_thatch_slab": "Laje de palha de junco",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Laje vertical de palha de junco",
+
+  "item.bamboo_blocks.bamboo_boat": "Barco de bambu"
+}
