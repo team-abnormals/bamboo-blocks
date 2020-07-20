@@ -1,15 +1,36 @@
 {
   "block.bamboo_blocks.bamboo_torch": "Bambusfackel",
-  "block.bamboo_blocks.bamboo_planks": "Bambusplanken",
-  "block.bamboo_blocks.bamboo_stairs": "Bambustreppen",
-  "block.bamboo_blocks.bamboo_slab": "Bambusplatte",
+  "block.bamboo_blocks.bamboo_wall_torch": "Bambusfackel",
+  "block.bamboo_blocks.potted_bamboo_torch": "Topfbambusfackel",
+  
+  "block.bamboo_blocks.soul_bamboo_torch": "Bambusseelenfackel",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Bambusseelenfackel",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Topfbambusseelenfackel",
+  
+  "block.bamboo_blocks.bamboo_planks": "Bambusbretter",
+  "block.bamboo_blocks.bamboo_stairs": "Bambustreppe",
+  "block.bamboo_blocks.bamboo_slab": "Bambusstufe",
   "block.bamboo_blocks.bamboo_fence": "Bambuszaun",
-  "block.bamboo_blocks.bamboo_fence_gate": "Bambuszaun-Tor",
+  "block.bamboo_blocks.bamboo_fence_gate": "Bambuszauntor",
   "block.bamboo_blocks.bamboo_door": "Bambustür",
-  "block.bamboo_blocks.bamboo_trapdoor": "Bambus-Falltür",
-  "block.bamboo_blocks.bamboo_button": "Bambus-Taste",
-  "block.bamboo_blocks.bamboo_pressure_plate": "Bambus-Druckplatte",
-  "block.bamboo_blocks.reed_thatch": "Thatch",
-  "block.bamboo_blocks.reed_thatch_stairs": "Thatchtreppen",
-  "block.bamboo_blocks.reed_thatch_slab": "Thatchplatte"
+  "block.bamboo_blocks.bamboo_trapdoor": "Bambusfalltür",
+  "block.bamboo_blocks.bamboo_button": "Bambusknopf",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Bambusdruckplatte",
+  "block.bamboo_blocks.bamboo_sign": "Bambusschild",
+  "block.bamboo_blocks.bamboo_wall_sign": "Bambusschild",
+  "block.bamboo_blocks.bamboo_ladder": "Bambusleiter",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Horizontale Bambusbretter",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Redstone-Bambustruhe",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Vertikale Bambusstufe",
+  "block.bamboo_blocks.bamboo_bookshelf": "Bambusbücherregal",
+  "block.bamboo_blocks.bamboo_chest": "Bambustruhe",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Redstone-Bambustruhe",
+  "block.bamboo_blocks.bamboo_beehive": "Bambusbienenstock",
+  
+  "block.bamboo_blocks.reed_thatch": "Reet",
+  "block.bamboo_blocks.reed_thatch_stairs": "Reettreppe",
+  "block.bamboo_blocks.reed_thatch_slab": "Reetstufe",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Vertikale Reetstufe",
+
+  "item.bamboo_blocks.bamboo_boat": "Bambusboot"
 }
