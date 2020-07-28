@@ -3,6 +3,7 @@ loaderVersion="[32,]"
 logoFile="logo.png"
 authors="bageldotjpg & Endergized"
 credits="Pugz & Farcr"
+license="https://github.com/minecraftabnormals/Bamboo-Blocks/blob/master/LICENSE.txt"
 
 [[mods]]
     modId="bamboo_blocks"
