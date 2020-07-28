@@ -6,7 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
+import com.minecraftabnormals.abnormals_core.core.utils.ItemStackUtils;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BambooBlock;
