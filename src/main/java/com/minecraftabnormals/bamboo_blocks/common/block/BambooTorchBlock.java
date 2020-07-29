@@ -1,4 +1,4 @@
-package com.pugz.bambooblocks.common.block;
+package com.minecraftabnormals.bamboo_blocks.common.block;
 
 import static net.minecraft.block.BambooBlock.PROPERTY_BAMBOO_LEAVES;
 
@@ -6,7 +6,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.minecraftabnormals.abnormals_core.core.utils.ItemStackUtils;
+import com.teamabnormals.abnormals_core.core.utils.ItemStackUtils;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BambooBlock;

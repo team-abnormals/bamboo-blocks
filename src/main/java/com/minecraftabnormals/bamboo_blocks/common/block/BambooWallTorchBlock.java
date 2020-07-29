@@ -1,4 +1,4 @@
-package com.pugz.bambooblocks.common.block;
+package com.minecraftabnormals.bamboo_blocks.common.block;
 
 import java.util.Map;
 import java.util.Random;

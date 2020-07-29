@@ -15,14 +15,14 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.0.0'
-group = 'com.pugz.bambooblocks'
+version = '2.0.1'
+group = 'com.minecraftabnormals'
 archivesBaseName = 'Bamboo-Blocks-1.16.1'
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'snapshot', version: '20200514-1.16'
+    mappings channel: 'snapshot', version: '20200723-1.16.1'
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     runs {
         client {
@@ -30,7 +30,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                bambooblocks {
+                bamboo_blocks {
                     source sourceSets.main
                 }
             }
@@ -40,7 +40,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                bambooblocks {
+                bamboo_blocks {
                     source sourceSets.main
                 }
             }
@@ -49,9 +49,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'bambooblocks', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'bamboo_blocks', '--all', '--output', file('src/generated/resources/')
             mods {
-                bambooblocks {
+                bamboo_blocks {
                     source sourceSets.main
                 }
             }
@@ -60,20 +60,20 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.88'
-    implementation fg.deobf("curse.maven:abnormals-core:3016902")
+    minecraft 'net.minecraftforge:forge:1.16.1-32.0.72'
+    implementation fg.deobf("curse.maven:abnormals-core:3017821")
 }
 
 jar {
     manifest {
         attributes([
         	"Specification-Title": "Bamboo Blocks",
-            	"Specification-Vendor": "Team Abnormals",
-            	"Specification-Version": "1",
-            	"Implementation-Title": project.name,
-            	"Implementation-Version": "${version}",
-            	"Implementation-Vendor": "Team Abnormals",
-            	"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            "Specification-Vendor": "Team Abnormals",
+           	"Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": "${version}",
+            "Implementation-Vendor": "Team Abnormals",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
         ])
     }
 }

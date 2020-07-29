@@ -1,6 +1,6 @@
-package com.pugz.bambooblocks.core;
+package com.minecraftabnormals.bamboo_blocks.core;
 
-import com.minecraftabnormals.abnormals_core.core.utils.RegistryHelper;
+import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
