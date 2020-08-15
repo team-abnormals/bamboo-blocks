@@ -1,11 +1,11 @@
 {
   "block.bamboo_blocks.bamboo_torch": "Tocha de bambu",
-  "block.bamboo_blocks.bamboo_wall_torch": "Tocha de bambu na parede",
-  "block.bamboo_blocks.potted_bamboo_torch": "Tocha de bambu em um vaso",
+  "block.bamboo_blocks.bamboo_wall_torch": "Tocha de bambu de parede",
+  "block.bamboo_blocks.potted_bamboo_torch": "Tocha de bambu envasada",
   
-  "block.bamboo_blocks.soul_bamboo_torch": "Tocha de bambu da alma",
-  "block.bamboo_blocks.soul_bamboo_wall_torch": "Tocha de bambu da alma na parede",
-  "block.bamboo_blocks.potted_soul_bamboo_torch": "Tocha de bambu da alma em um vaso",
+  "block.bamboo_blocks.soul_bamboo_torch": "Tocha de bambu das almas",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Tocha de bambu das almas de parede",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Tocha de bambu das almas envasada",
   
   "block.bamboo_blocks.bamboo_planks": "Tábuas de bambu",
   "block.bamboo_blocks.bamboo_stairs": "Escadas de bambu",
@@ -32,5 +32,5 @@
   "block.bamboo_blocks.reed_thatch_slab": "Laje de palha de junco",
   "block.bamboo_blocks.reed_thatch_vertical_slab": "Laje vertical de palha de junco",
 
-  "item.bamboo_blocks.bamboo_boat": "Barco de bambu"
+  "item.bamboo_blocks.bamboo_boat": "Bote bambu"
 }
