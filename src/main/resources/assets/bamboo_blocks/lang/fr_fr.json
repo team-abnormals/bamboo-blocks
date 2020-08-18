@@ -1,0 +1,36 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Torche en bambou",
+  "block.bamboo_blocks.bamboo_wall_torch": "Torche murale en bambou",
+  "block.bamboo_blocks.potted_bamboo_torch": "Torche en bambou mise en pot",
+  
+  "block.bamboo_blocks.soul_bamboo_torch": "Torche des âmes en bambou",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Torche murale des âmes en bambou",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Torche des âmes en bambou mise en pot",
+  
+  "block.bamboo_blocks.bamboo_planks": "Planches de bambou",
+  "block.bamboo_blocks.bamboo_stairs": "Escaliers en bambou",
+  "block.bamboo_blocks.bamboo_slab": "Dalle en bambou",
+  "block.bamboo_blocks.bamboo_fence": "Barrière en Bambou",
+  "block.bamboo_blocks.bamboo_fence_gate": "Portillon en Bambou",
+  "block.bamboo_blocks.bamboo_door": "Porte en bambou",
+  "block.bamboo_blocks.bamboo_trapdoor": "Trappe en bambou",
+  "block.bamboo_blocks.bamboo_button": "Bouton en bambou",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Plaque de pression en bambou",
+  "block.bamboo_blocks.bamboo_sign": "Pancarte en bambou",
+  "block.bamboo_blocks.bamboo_wall_sign": "Pancarte murale en bambou",
+  "block.bamboo_blocks.bamboo_ladder": "échelle en bambou",
+  "block.bamboo_blocks.horizontal_bamboo_planks": "Planches verticale en bambou",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Coffre piégé en bambou",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Dalle verticale en bambou",
+  "block.bamboo_blocks.bamboo_bookshelf": "Bibliothèque en bambou",
+  "block.bamboo_blocks.bamboo_chest": "Coffre en bambou",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Coffre en bambou piégé",
+  "block.bamboo_blocks.bamboo_beehive": "Ruche en bambou",
+
+  "block.bamboo_blocks.reed_thatch": "Chaume de roseau",
+  "block.bamboo_blocks.reed_thatch_stairs": "Escaliers en chaume de roseau",
+  "block.bamboo_blocks.reed_thatch_slab": "Dalle en chaume de roseau",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Dalle verticale en chaume de roseau",
+
+  "item.bamboo_blocks.bamboo_boat": "Bateau en bambou"
+}
