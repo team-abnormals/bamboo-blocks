@@ -3,9 +3,9 @@
   "block.bamboo_blocks.bamboo_wall_torch": "Bambuswandfackel",
   "block.bamboo_blocks.potted_bamboo_torch": "Eingetopfte Bambusfackel",
   
-  "block.bamboo_blocks.soul_bamboo_torch": "Bambusseelenfackel",
-  "block.bamboo_blocks.soul_bamboo_wall_torch": "Bambusseelenwandfackel",
-  "block.bamboo_blocks.potted_soul_bamboo_torch": "Eingetopfte Bambusseelenfackel",
+  "block.bamboo_blocks.soul_bamboo_torch": "Seelenbambusfackel",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Seelenbambuswandfackel",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Eingetopfte Seelenbambusfackel",
   
   "block.bamboo_blocks.bamboo_planks": "Bambusbretter",
   "block.bamboo_blocks.bamboo_stairs": "Bambustreppe",
