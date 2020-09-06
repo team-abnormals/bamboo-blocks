@@ -19,7 +19,7 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "bamboo_blocks"
+      "modid": "buzzier_bees"
     }
   ]
 }

@@ -12,7 +12,6 @@ issueTrackerURL="https://github.com/minecraftabnormals/Bamboo-Blocks/issues"
     displayName="Bamboo Blocks"
     description='''Fun Bamboo Blocks to build with!'''
 
-
 [[dependencies.bamboo_blocks]]
     modId="forge"
     mandatory=true
