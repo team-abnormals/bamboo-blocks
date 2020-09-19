@@ -37,6 +37,7 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 
@@ -126,7 +127,7 @@ public class BambooBlocksRegistry {
 		public static final Block.Properties BAMBOO_PRESSURE_PLATE 	= Block.Properties.create(Material.WOOD).doesNotBlockMovement().hardnessAndResistance(0.6F).sound(SoundType.WOOD);
 		public static final Block.Properties BAMBOO_LADDER 			= Block.Properties.create(Material.MISCELLANEOUS).notSolid().hardnessAndResistance(0.4F).sound(SoundType.LADDER);
 		
-		public static final Block.Properties REED_THATCH = Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(1.5F, 2.0F).sound(SoundType.PLANT);
+		public static final Block.Properties REED_THATCH = Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(1.5F, 2.0F).sound(SoundType.PLANT).harvestTool(ToolType.HOE);
 	}
 
 }
