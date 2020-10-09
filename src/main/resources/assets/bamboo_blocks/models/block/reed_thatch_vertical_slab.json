@@ -1,5 +1,5 @@
 {
-    "parent": "bamboo_blocks:block/vertical_slab",
+    "parent": "abnormals_core:block/vertical_slab",
     "textures": {
         "side": "bamboo_blocks:block/reed_thatch",
         "top": "bamboo_blocks:block/reed_thatch",
