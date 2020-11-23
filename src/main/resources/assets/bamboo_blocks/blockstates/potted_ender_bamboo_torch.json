@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "bamboo_blocks:block/potted_ender_bamboo_torch" }
+  }
+}

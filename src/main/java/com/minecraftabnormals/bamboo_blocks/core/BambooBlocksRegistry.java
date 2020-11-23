@@ -38,6 +38,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 
@@ -47,12 +48,16 @@ public class BambooBlocksRegistry {
 	public static final RegistryHelper HELPER = BambooBlocks.REGISTRY_HELPER;
 
 	public static final RegistryObject<Block> BAMBOO_WALL_TORCH 	= HELPER.createBlockNoItem("bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME));
-	public static final RegistryObject<Block> BAMBOO_TORCH 			= HELPER.createWallOrFloorBlock("bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME), () -> BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> BAMBOO_TORCH 			= HELPER.createWallOrFloorBlock("bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, ParticleTypes.FLAME), BAMBOO_WALL_TORCH, ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> POTTED_BAMBOO_TORCH 	= HELPER.createBlockNoItem("potted_bamboo_torch", () -> new FlowerPotBlock(BAMBOO_TORCH.get(), Properties.FLOWER_POT_BAMBOO_TORCH));
 
 	public static final RegistryObject<Block> SOUL_BAMBOO_WALL_TORCH 	= HELPER.createBlockNoItem("soul_bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.SOUL_BAMBOO_TORCH, ParticleTypes.SOUL_FIRE_FLAME));
-	public static final RegistryObject<Block> SOUL_BAMBOO_TORCH 		= HELPER.createWallOrFloorBlock("soul_bamboo_torch", () -> new BambooTorchBlock(Properties.SOUL_BAMBOO_TORCH, ParticleTypes.SOUL_FIRE_FLAME), () -> SOUL_BAMBOO_WALL_TORCH.get(), ItemGroup.DECORATIONS);
+	public static final RegistryObject<Block> SOUL_BAMBOO_TORCH 		= HELPER.createWallOrFloorBlock("soul_bamboo_torch", () -> new BambooTorchBlock(Properties.SOUL_BAMBOO_TORCH, ParticleTypes.SOUL_FIRE_FLAME), SOUL_BAMBOO_WALL_TORCH, ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> POTTED_SOUL_BAMBOO_TORCH 	= HELPER.createBlockNoItem("potted_soul_bamboo_torch", () -> new FlowerPotBlock(SOUL_BAMBOO_TORCH.get(), Properties.FLOWER_POT_SOUL_BAMBOO_TORCH));
+
+	public static final RegistryObject<Block> ENDER_BAMBOO_WALL_TORCH 	= HELPER.createBlockNoItem("ender_bamboo_wall_torch", () -> new BambooWallTorchBlock(Properties.BAMBOO_TORCH, null));
+	public static final RegistryObject<Block> ENDER_BAMBOO_TORCH 		= HELPER.createWallOrFloorBlock("ender_bamboo_torch", () -> new BambooTorchBlock(Properties.BAMBOO_TORCH, null), ENDER_BAMBOO_WALL_TORCH, ModList.get().isLoaded("endergetic") ? ItemGroup.DECORATIONS : null);
+	public static final RegistryObject<Block> POTTED_ENDER_BAMBOO_TORCH 	= HELPER.createBlockNoItem("potted_ender_bamboo_torch", () -> new FlowerPotBlock(ENDER_BAMBOO_TORCH.get(), Properties.FLOWER_POT_BAMBOO_TORCH));
 
 	public static final RegistryObject<Block> BAMBOO_PLANKS 			= HELPER.createBlock("bamboo_planks", () -> new PlanksBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_STAIRS 			= HELPER.createBlock("bamboo_stairs", () -> new WoodStairsBlock(BAMBOO_PLANKS.get().getDefaultState(), Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
@@ -61,11 +66,11 @@ public class BambooBlocksRegistry {
 	public static final RegistryObject<Block> BAMBOO_FENCE_GATE 		= HELPER.createBlock("bamboo_fence_gate", () -> new WoodFenceGateBlock(Properties.BAMBOO_PLANKS), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> BAMBOO_DOOR 				= HELPER.createBlock("bamboo_door", () -> new WoodDoorBlock(Properties.BAMBOO_DOOR), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> BAMBOO_TRAPDOOR 			= HELPER.createBlock("bamboo_trapdoor", () -> new WoodTrapDoorBlock(Properties.BAMBOO_DOOR), ItemGroup.REDSTONE);
-	public static final RegistryObject<Block> BAMBOO_BUTTON 			= HELPER.createBlock("bamboo_button", () -> new AbnormalsWoodButtonBlock(Block.Properties.from(Blocks.OAK_BUTTON)), ItemGroup.REDSTONE);
-	public static final RegistryObject<Block> BAMBOO_PRESSURE_PLATE 	= HELPER.createBlock("bamboo_pressure_plate", () -> new WoodPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(Blocks.OAK_PRESSURE_PLATE)), ItemGroup.REDSTONE);
+	public static final RegistryObject<Block> BAMBOO_BUTTON 			= HELPER.createBlock("bamboo_button", () -> new AbnormalsWoodButtonBlock(Properties.BAMBOO_BUTTON), ItemGroup.REDSTONE);
+	public static final RegistryObject<Block> BAMBOO_PRESSURE_PLATE 	= HELPER.createBlock("bamboo_pressure_plate", () -> new WoodPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, Properties.BAMBOO_PRESSURE_PLATE), ItemGroup.REDSTONE);
 	public static final RegistryObject<Block> BAMBOO_LADDER 			= HELPER.createCompatBlock("quark", "bamboo_ladder", () -> new AbnormalsLadderBlock(Properties.BAMBOO_LADDER), ItemGroup.DECORATIONS);
 	public static final RegistryObject<Block> HORIZONTAL_BAMBOO_PLANKS 	= HELPER.createCompatBlock("quark", "horizontal_bamboo_planks", () -> new Block(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Block> VERTICAL_BAMBOO_SLAB 		= HELPER.createCompatBlock("quark", "bamboo_vertical_slab", () -> new VerticalSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Block> BAMBOO_VERTICAL_SLAB 		= HELPER.createCompatBlock("quark", "bamboo_vertical_slab", () -> new VerticalSlabBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_BOOKSHELF 			= HELPER.createCompatBlock("quark", "bamboo_bookshelf", () -> new BookshelfBlock(Properties.BAMBOO_PLANKS), ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BAMBOO_BEEHIVE			= HELPER.createCompatBlock("buzzier_bees", "bamboo_beehive", () -> new AbnormalsBeehiveBlock(Block.Properties.from(Blocks.BEEHIVE)), ItemGroup.DECORATIONS);
 
@@ -81,23 +86,26 @@ public class BambooBlocksRegistry {
 
 	public static void registerFlammables() {
 		DataUtils.registerFlammable(BAMBOO_PLANKS.get(), 5, 20);
-		DataUtils.registerFlammable(BAMBOO_STAIRS.get(), 5, 20);
 		DataUtils.registerFlammable(BAMBOO_SLAB.get(), 5, 20);
+		DataUtils.registerFlammable(BAMBOO_STAIRS.get(), 5, 20);
 		DataUtils.registerFlammable(BAMBOO_FENCE.get(), 5, 20);
 		DataUtils.registerFlammable(BAMBOO_FENCE_GATE.get(), 5, 20);
-		DataUtils.registerFlammable(REED_THATCH.get(), 10, 32);
-		DataUtils.registerFlammable(REED_THATCH_STAIRS.get(), 10, 32);
-		DataUtils.registerFlammable(REED_THATCH_SLAB.get(), 10, 32);
 		DataUtils.registerFlammable(HORIZONTAL_BAMBOO_PLANKS.get(), 5, 20);
-		DataUtils.registerFlammable(VERTICAL_BAMBOO_SLAB.get(), 5, 20);
-		DataUtils.registerFlammable(VERTICAL_REED_THATCH_SLAB.get(), 5, 20);
-		DataUtils.registerFlammable(BAMBOO_BOOKSHELF.get(), 5, 20);
+		DataUtils.registerFlammable(BAMBOO_VERTICAL_SLAB.get(), 5, 20);
+		DataUtils.registerFlammable(BAMBOO_BOOKSHELF.get(), 30, 20);
+		DataUtils.registerFlammable(BAMBOO_BEEHIVE.get(), 5, 20);
+		
+		DataUtils.registerFlammable(REED_THATCH.get(), 60, 20);
+		DataUtils.registerFlammable(REED_THATCH_STAIRS.get(), 60, 20);
+		DataUtils.registerFlammable(REED_THATCH_SLAB.get(), 60, 20);
+		DataUtils.registerFlammable(VERTICAL_REED_THATCH_SLAB.get(), 60, 20);
+
 	}
 
 	public static void registerCompostables() {
-		DataUtils.registerCompostable(REED_THATCH.get(), 0.75F);
-		DataUtils.registerCompostable(REED_THATCH_STAIRS.get(), 0.60F);
-		DataUtils.registerCompostable(REED_THATCH_SLAB.get(), 0.45F);
+		DataUtils.registerCompostable(REED_THATCH.get(), 0.65F);
+		DataUtils.registerCompostable(REED_THATCH_STAIRS.get(), 0.65F);
+		DataUtils.registerCompostable(REED_THATCH_SLAB.get(), 0.65F);
 	}
 
 	public static void registerRenderLayers() {
@@ -108,6 +116,10 @@ public class BambooBlocksRegistry {
 		RenderTypeLookup.setRenderLayer(SOUL_BAMBOO_WALL_TORCH.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(SOUL_BAMBOO_TORCH.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(POTTED_SOUL_BAMBOO_TORCH.get(), RenderType.getCutout());
+
+		RenderTypeLookup.setRenderLayer(ENDER_BAMBOO_WALL_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ENDER_BAMBOO_TORCH.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(POTTED_ENDER_BAMBOO_TORCH.get(), RenderType.getCutout());
 
 		RenderTypeLookup.setRenderLayer(BAMBOO_DOOR.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BAMBOO_TRAPDOOR.get(), RenderType.getCutout());

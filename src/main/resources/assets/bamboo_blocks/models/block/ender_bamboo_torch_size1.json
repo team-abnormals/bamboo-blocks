@@ -1,7 +1,7 @@
 {
 	"parent": "bamboo_blocks:block/bamboo_torch_size1",
 	"textures": {
-		"torch": "bamboo_blocks:block/soul_bamboo_torch_size1",
+		"torch": "bamboo_blocks:block/ender_bamboo_torch_size1",
 		"particle": "#torch"
 	}
 }

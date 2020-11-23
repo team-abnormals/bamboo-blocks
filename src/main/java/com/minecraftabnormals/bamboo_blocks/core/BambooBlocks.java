@@ -1,7 +1,6 @@
 package com.minecraftabnormals.bamboo_blocks.core;
 
 import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
-
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DeferredWorkQueue;
@@ -20,16 +19,14 @@ public class BambooBlocks {
 
 	public BambooBlocks() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		REGISTRY_HELPER.getDeferredBlockRegister().register(modEventBus);
-		REGISTRY_HELPER.getDeferredItemRegister().register(modEventBus);
+		REGISTRY_HELPER.getDeferredBlockRegister().register(bus);
+		REGISTRY_HELPER.getDeferredItemRegister().register(bus);
 
-		DistExecutor.runWhenOn(Dist.CLIENT, () -> this::initSetupClient);
-	}
-
-	public void initSetupClient() {
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
+		DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+			bus.addListener(this::setupClient);
+		});
 	}
 
 	private void setupCommon(final FMLCommonSetupEvent event) {

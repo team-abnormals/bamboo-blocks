@@ -2,7 +2,7 @@
   "ambientocclusion": false,
   "parent": "bamboo_blocks:block/potted_bamboo_torch",
   "textures": {
-    "bamboo": "bamboo_blocks:block/soul_bamboo_torch_size0",
+    "bamboo": "bamboo_blocks:block/ender_bamboo_torch_size0",
     "flowerpot": "block/flower_pot",
     "particle": "block/flower_pot",
     "dirt": "block/dirt"

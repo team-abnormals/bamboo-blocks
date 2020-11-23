@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "bamboo_blocks:potted_bamboo_torch",
-    "bamboo_blocks:potted_soul_bamboo_torch"
+    "bamboo_blocks:potted_soul_bamboo_torch",
+    "bamboo_blocks:potted_ender_bamboo_torch"
   ]
 }

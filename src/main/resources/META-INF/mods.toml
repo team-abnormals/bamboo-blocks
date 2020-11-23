@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[32,)"
-license="https://github.com/minecraftabnormals/Bamboo-Blocks/blob/master/LICENSE.txt"
-issueTrackerURL="https://github.com/minecraftabnormals/Bamboo-Blocks/issues"
+license="https://github.com/team-abnormals/bamboo-blocks/blob/master/LICENSE.txt"
+issueTrackerURL="https://github.com/team-abnormals/bamboo-blocks/issues"
 
 [[mods]]
     logoFile="logo.png"

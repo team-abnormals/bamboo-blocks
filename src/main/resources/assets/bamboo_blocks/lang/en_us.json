@@ -6,6 +6,10 @@
   "block.bamboo_blocks.soul_bamboo_torch": "Soul Bamboo Torch",
   "block.bamboo_blocks.soul_bamboo_wall_torch": "Soul Bamboo Wall Torch",
   "block.bamboo_blocks.potted_soul_bamboo_torch": "Potted Soul Bamboo Torch",
+
+  "block.bamboo_blocks.ender_bamboo_torch": "Ender Bamboo Torch",
+  "block.bamboo_blocks.ender_bamboo_wall_torch": "Ender Bamboo Wall Torch",
+  "block.bamboo_blocks.potted_ender_bamboo_torch": "Potted Ender Bamboo Torch",
   
   "block.bamboo_blocks.bamboo_planks": "Bamboo Planks",
   "block.bamboo_blocks.bamboo_stairs": "Bamboo Stairs",

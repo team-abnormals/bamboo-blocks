@@ -2,7 +2,7 @@
 	"ambientocclusion": false,
 	"parent": "bamboo_blocks:block/bamboo_torch_wall",
 	"textures": {
-		"torch": "bamboo_blocks:block/soul_bamboo_torch_size0",
+		"torch": "bamboo_blocks:block/ender_bamboo_torch_size0",
 		"particle": "#torch"
 	}
 }

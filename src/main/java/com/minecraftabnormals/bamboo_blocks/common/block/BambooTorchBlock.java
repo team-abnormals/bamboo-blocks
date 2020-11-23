@@ -21,6 +21,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.particles.IParticleData;
+import net.minecraft.particles.ParticleType;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IntegerProperty;
@@ -28,6 +29,7 @@ import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BambooLeaves;
 import net.minecraft.util.Direction;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -38,6 +40,7 @@ import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class BambooTorchBlock extends TorchBlock {
 
@@ -101,13 +104,21 @@ public class BambooTorchBlock extends TorchBlock {
 		BlockState downState = world.getBlockState(pos.down());
 		if (downState.getBlock() instanceof BambooBlock) {
 			return this.getDefaultState()
-					.with(LEAVES, downState.get(PROPERTY_BAMBOO_LEAVES) != BambooLeaves.NONE || downState.get(BambooBlock.PROPERTY_AGE) == 0 ? true : false)
+					.with(LEAVES, downState.get(PROPERTY_BAMBOO_LEAVES) != BambooLeaves.NONE || downState.get(BambooBlock.PROPERTY_AGE) == 0)
 					.with(SIZE, downState.get(BambooBlock.PROPERTY_AGE));
 		} else if (downState.getBlock() instanceof BambooSaplingBlock && context.getFace() == Direction.UP) {
 			world.setBlockState(pos.down(), Blocks.BAMBOO.getDefaultState(), 3);
 			return this.getDefaultState();
 		}
 		return this.getDefaultState();
+	}
+
+	public IParticleData getFlameParticle() {
+		if(this.field_235607_e_ == null) {
+			ParticleType<?> enderFlame = ForgeRegistries.PARTICLE_TYPES.getValue(new ResourceLocation("endergetic", "ender_flame"));
+			return enderFlame != null ? (IParticleData) enderFlame : ParticleTypes.SOUL_FIRE_FLAME;
+		}
+		return this.field_235607_e_;
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -117,6 +128,6 @@ public class BambooTorchBlock extends TorchBlock {
 		double d1 = (double) pos.getY() + 0.9D + offset.getY();
 		double d2 = (double) pos.getZ() + 0.5D + offset.getZ();
 		worldIn.addParticle(ParticleTypes.SMOKE,d0, d1, d2, 0.0D, 0.0D, 0.0D);
-		worldIn.addParticle(this.field_235607_e_, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+		worldIn.addParticle(this.getFlameParticle(), d0, d1, d2, 0.0D, 0.0D, 0.0D);
 	}
 }
