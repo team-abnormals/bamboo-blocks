@@ -7,6 +7,10 @@
   "block.bamboo_blocks.soul_bamboo_wall_torch": "Seelenbambuswandfackel",
   "block.bamboo_blocks.potted_soul_bamboo_torch": "Eingetopfte Seelenbambusfackel",
   
+  "block.bamboo_blocks.ender_bamboo_torch": "Enderbambusfackel",
+  "block.bamboo_blocks.ender_bamboo_wall_torch": "Enderbambuswandfackel",
+  "block.bamboo_blocks.potted_ender_bamboo_torch": "Eingetopfte Enderbambusfackel",
+  
   "block.bamboo_blocks.bamboo_planks": "Bambusbretter",
   "block.bamboo_blocks.bamboo_stairs": "Bambustreppe",
   "block.bamboo_blocks.bamboo_slab": "Bambusstufe",
