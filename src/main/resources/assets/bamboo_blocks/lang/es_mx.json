@@ -7,6 +7,10 @@
   "block.bamboo_blocks.soul_bamboo_wall_torch": "Antorcha de bambú de almas en pared",
   "block.bamboo_blocks.potted_soul_bamboo_torch": "Maceta con antorcha de bambú de almas",
 
+  "block.bamboo_blocks.ender_bamboo_torch": "Antorcha de bambú de ender",
+  "block.bamboo_blocks.ender_bamboo_wall_torch": "Antorcha de bambú de ender en pared",
+  "block.bamboo_blocks.potted_ender_bamboo_torch": "Maceta con antorcha de bambú de ender",
+
   "block.bamboo_blocks.bamboo_planks": "Madera de bambú",
   "block.bamboo_blocks.bamboo_stairs": "Escaleras de bambú",
   "block.bamboo_blocks.bamboo_slab": "Losa de bambú",
@@ -16,23 +20,21 @@
   "block.bamboo_blocks.bamboo_trapdoor": "Trampilla de bambú",
   "block.bamboo_blocks.bamboo_button": "Botón de bambú",
   "block.bamboo_blocks.bamboo_pressure_plate": "Placa de presión de bambú",
-  "block.bamboo_blocks.reed_thatch": "Paja de caña",
-  "block.bamboo_blocks.reed_thatch_stairs": "Escaleras de paja de caña",
-  "block.bamboo_blocks.reed_thatch_slab": "Losa de paja de caña",
+  "block.bamboo_blocks.bamboo_sign": "Letrero de bambú",
+  "block.bamboo_blocks.bamboo_wall_sign": "Letrero de bambú en pared",
   "block.bamboo_blocks.bamboo_ladder": "Escalera de mano de bambú",
   "block.bamboo_blocks.horizontal_bamboo_planks": "Madera horizontal de bambú",
   "block.bamboo_blocks.trapped_bamboo_chest": "Cofre trampa de bambú",
   "block.bamboo_blocks.bamboo_vertical_slab": "Losa vertical de bambú",
-  "block.bamboo_blocks.reed_thatch_vertical_slab": "Losa vertical de paja de caña",
   "block.bamboo_blocks.bamboo_bookshelf": "Estante de libros de bambú",
-
-  "block.bamboo_blocks.bamboo_sign": "Letrero de bambú",
-  "block.bamboo_blocks.bamboo_wall_sign": "Letrero de bambú en pared",
-
   "block.bamboo_blocks.bamboo_chest": "Cofre de bambú",
   "block.bamboo_blocks.bamboo_trapped_chest": "Cofre trampa de bambú",
-
   "block.bamboo_blocks.bamboo_beehive": "Apiario de abejas de bambú",
+
+  "block.bamboo_blocks.reed_thatch": "Paja de cañas",
+  "block.bamboo_blocks.reed_thatch_stairs": "Escaleras de paja de cañas",
+  "block.bamboo_blocks.reed_thatch_slab": "Losa de paja de cañas",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Losa vertical de paja de cañas",
 
   "item.bamboo_blocks.bamboo_boat": "Bote de bambú"
 }
