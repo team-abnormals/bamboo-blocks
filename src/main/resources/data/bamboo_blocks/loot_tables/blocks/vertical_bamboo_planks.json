@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bamboo_blocks:horizontal_bamboo_planks"
+          "name": "bamboo_blocks:vertical_bamboo_planks"
         }
       ],
       "conditions": [

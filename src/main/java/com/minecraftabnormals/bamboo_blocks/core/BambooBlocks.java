@@ -1,44 +1,37 @@
 package com.minecraftabnormals.bamboo_blocks.core;
 
-import com.teamabnormals.abnormals_core.core.utils.RegistryHelper;
-import net.minecraftforge.api.distmarker.Dist;
+import com.minecraftabnormals.abnormals_core.core.util.registry.RegistryHelper;
+import com.minecraftabnormals.bamboo_blocks.core.other.BBCompat;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@SuppressWarnings("deprecation")
-@Mod(BambooBlocks.MODID)
+@Mod(BambooBlocks.MOD_ID)
 public class BambooBlocks {
-
-	public static final String MODID = "bamboo_blocks";
-	public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MODID);
+	public static final String MOD_ID = "bamboo_blocks";
+	public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
 
 	public BambooBlocks() {
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		REGISTRY_HELPER.getDeferredBlockRegister().register(bus);
-		REGISTRY_HELPER.getDeferredItemRegister().register(bus);
+		REGISTRY_HELPER.register(bus);
+		MinecraftForge.EVENT_BUS.register(this);
 
-		DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-			bus.addListener(this::setupClient);
+		bus.addListener(this::commonSetup);
+		bus.addListener(this::clientSetup);
+	}
+
+	private void commonSetup(FMLCommonSetupEvent event) {
+		event.enqueueWork(() -> {
+			BBCompat.registerFlammables();
+			BBCompat.registerCompostables();
 		});
 	}
 
-	private void setupCommon(final FMLCommonSetupEvent event) {
-    	DeferredWorkQueue.runLater(() -> {
-    		BambooBlocksRegistry.registerFlammables();
-    		BambooBlocksRegistry.registerCompostables();
-    	});
-    }
-
-	private void setupClient(final FMLClientSetupEvent event) {
-		DeferredWorkQueue.runLater(() -> {
-			BambooBlocksRegistry.registerRenderLayers();
-		});
+	private void clientSetup(FMLClientSetupEvent event) {
+		event.enqueueWork(BBCompat::registerRenderLayers);
 	}
 }

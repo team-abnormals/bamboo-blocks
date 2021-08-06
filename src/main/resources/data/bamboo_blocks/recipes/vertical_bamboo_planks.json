@@ -11,7 +11,7 @@
     }
   },
   "result": {
-    "item": "bamboo_blocks:horizontal_bamboo_planks",
+    "item": "bamboo_blocks:vertical_bamboo_planks",
     "count": 3
   },
   "conditions": [
