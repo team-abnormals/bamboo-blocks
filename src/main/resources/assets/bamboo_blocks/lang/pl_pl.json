@@ -1,5 +1,16 @@
 {
   "block.bamboo_blocks.bamboo_torch": "Bambusowa pochodnia",
+  "block.bamboo_blocks.bamboo_wall_torch": "Ścienna bambusowa pochodnia",
+  "block.bamboo_blocks.potted_bamboo_torch": "Bambusowa pochodnia w doniczce",
+    
+  "block.bamboo_blocks.soul_bamboo_torch": "Eteryczna bambusowa pochodnia",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Ścienna eteryczna bambusowa pochodnia",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Eteryczna bambusowa pochodnia w doniczce",
+
+  "block.bamboo_blocks.ender_bamboo_torch": "Enderowa bambusowa pochodnia",
+  "block.bamboo_blocks.ender_bamboo_wall_torch": "Ścienna enderowa bambusowa pochodnia",
+  "block.bamboo_blocks.potted_ender_bamboo_torch": "Enderowa bambusowa pochodnia w doniczce",
+    
   "block.bamboo_blocks.bamboo_planks": "Bambusowe deski",
   "block.bamboo_blocks.bamboo_stairs": "Bambusowe schody",
   "block.bamboo_blocks.bamboo_slab": "Bambusowa płyta",
@@ -9,15 +20,21 @@
   "block.bamboo_blocks.bamboo_trapdoor": "Bambusowa klapa",
   "block.bamboo_blocks.bamboo_button": "Bambusowy przycisk",
   "block.bamboo_blocks.bamboo_pressure_plate": "Bambusowa płyta naciskowa",
-  "block.bamboo_blocks.reed_thatch": "Trzcinowe poszycie",
-  "block.bamboo_blocks.reed_thatch_stairs": "Schody z trzcinowego poszycia",
-  "block.bamboo_blocks.reed_thatch_slab": "Płyta z trzcinowego poszycia",
+  "block.bamboo_blocks.bamboo_sign": "Bambusowa tabliczka",
+  "block.bamboo_blocks.bamboo_wall_sign": "Ścienna bambusowa tabliczka",
   "block.bamboo_blocks.bamboo_ladder": "Bambusowa drabina",
   "block.bamboo_blocks.vertical_bamboo_planks": "Pionowe bambusowe deski",
-  "block.bamboo_blocks.bamboo_chest": "Bambusowa skrzynia",
-  "block.bamboo_blocks.trapped_bamboo_chest": "Bambusowa skrzynia pułapka",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Bambusowa skrzynia-pułapka",
   "block.bamboo_blocks.bamboo_vertical_slab": "Pionowa bambusowa płyta",
-  "block.bamboo_blocks.reed_thatch_vertical_slab": "Pionowa płyta z trzcinowego poszycia",
+  "block.bamboo_blocks.bamboo_bookshelf": "Bambusowa biblioteczka",
+  "block.bamboo_blocks.bamboo_chest": "Bambusowa skrzynia",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Bambusowa skrzynia-pułapk",
+  "block.bamboo_blocks.bamboo_beehive": "Bambusowy ul",
 
+  "block.bamboo_blocks.reed_thatch": "Trzcinowa strzecha",
+  "block.bamboo_blocks.reed_thatch_stairs": "Trzcinowe strzechowe schody",
+  "block.bamboo_blocks.reed_thatch_slab": "Trzcinowa strzechowa płyta",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Pionowa trzcinowa strzechowa płyta",
+  
   "item.bamboo_blocks.bamboo_boat": "Bambusowa łódka"
 }
