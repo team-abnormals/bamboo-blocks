@@ -106,11 +106,14 @@ public class BambooTorchBlock extends TorchBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
-		Vector3d offset = state.getOffset(worldIn.getChunkForCollisions(pos.getX(), pos.getY()), pos);
-		double d0 = (double) pos.getX() + 0.5D + offset.x();
-		double d1 = (double) pos.getY() + 0.9D + offset.y();
-		double d2 = (double) pos.getZ() + 0.5D + offset.z();
-		worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-		worldIn.addParticle(this.getFlameParticle(), d0, d1, d2, 0.0D, 0.0D, 0.0D);
+		IBlockReader reader = worldIn.getChunkForCollisions(pos.getX(), pos.getY());
+		if (reader != null) {
+			Vector3d offset = state.getOffset(reader, pos);
+			double d0 = (double) pos.getX() + 0.5D + offset.x();
+			double d1 = (double) pos.getY() + 0.9D + offset.y();
+			double d2 = (double) pos.getZ() + 0.5D + offset.z();
+			worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+			worldIn.addParticle(this.getFlameParticle(), d0, d1, d2, 0.0D, 0.0D, 0.0D);
+		}
 	}
 }
