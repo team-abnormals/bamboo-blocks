@@ -1,15 +1,40 @@
 {
-  "block.bamboo_blocks.bamboo_torch": "Torcia di Bambù",
-  "block.bamboo_blocks.bamboo_planks": "Assi di Bambù",
-  "block.bamboo_blocks.bamboo_stairs": "Scale di Bambù",
-  "block.bamboo_blocks.bamboo_slab": "Lastra di Bambù",
-  "block.bamboo_blocks.bamboo_fence": "Staccionata di Bambù",
-  "block.bamboo_blocks.bamboo_fence_gate": "Cancelletto di Bambù",
-  "block.bamboo_blocks.bamboo_door": "Porta di Bambù",
-  "block.bamboo_blocks.bamboo_trapdoor": "Botola di Bambù",
-  "block.bamboo_blocks.bamboo_button": "Bamboo Button",
-  "block.bamboo_blocks.bamboo_pressure_plate": "Pedana a Pressione di Bambù",
-  "block.bamboo_blocks.reed_thatch": "Paglia",
-  "block.bamboo_blocks.reed_thatch_stairs": "Scale di Paglia",
-  "block.bamboo_blocks.reed_thatch_slab": "Lastra di Paglia"
+  "block.bamboo_blocks.bamboo_torch": "Torcia di bambù",
+  "block.bamboo_blocks.bamboo_wall_torch": "Torcia di bambù su parete",
+  "block.bamboo_blocks.potted_bamboo_torch": "Vaso con torcia di bambù",
+  
+  "block.bamboo_blocks.soul_bamboo_torch": "Torcia di bambù delle anime",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Torcia di bambù delle anime su parete",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Vaso con torcia di bambù delle anime",
+
+  "block.bamboo_blocks.ender_bamboo_torch": "Torcia di bambù di ender",
+  "block.bamboo_blocks.ender_bamboo_wall_torch": "Torcia di bambù di ender su parete",
+  "block.bamboo_blocks.potted_ender_bamboo_torch": "Vaso con torcia di bambù di ender",
+  
+  "block.bamboo_blocks.bamboo_planks": "Assi di bambù",
+  "block.bamboo_blocks.bamboo_stairs": "Scalini di bambù",
+  "block.bamboo_blocks.bamboo_slab": "Lastra di bambù",
+  "block.bamboo_blocks.bamboo_fence": "Staccionata di bambù",
+  "block.bamboo_blocks.bamboo_fence_gate": "Cancelletto di bambù",
+  "block.bamboo_blocks.bamboo_door": "Porta di bambù",
+  "block.bamboo_blocks.bamboo_trapdoor": "Botola di bambù",
+  "block.bamboo_blocks.bamboo_button": "Pulsante di bambù",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Pedana a pressione di bambù",
+  "block.bamboo_blocks.bamboo_sign": "Cartello di bambù",
+  "block.bamboo_blocks.bamboo_wall_sign": "Cartello di bambù su parete",
+  "block.bamboo_blocks.bamboo_ladder": "Scala a pioli di bambù",
+  "block.bamboo_blocks.vertical_bamboo_planks": "Assi verticali di bambù",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Baule trappola di bambù",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Lastra verticale di bambù",
+  "block.bamboo_blocks.bamboo_bookshelf": "Libreria di bambù",
+  "block.bamboo_blocks.bamboo_chest": "Baule di bambù",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Baule trappola di bambù",
+  "block.bamboo_blocks.bamboo_beehive": "Arnia di bambù",
+  
+  "block.bamboo_blocks.reed_thatch": "Paglia di canna",
+  "block.bamboo_blocks.reed_thatch_stairs": "Scalini di paglia di canna",
+  "block.bamboo_blocks.reed_thatch_slab": "Lastra di paglia di canna",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Lastra verticale di paglia di canna",
+  
+  "item.bamboo_blocks.bamboo_boat": "Barca di bambù"
 }
