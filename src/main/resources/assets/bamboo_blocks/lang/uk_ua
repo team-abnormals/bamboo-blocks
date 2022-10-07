@@ -1,0 +1,36 @@
+{
+  "block.bamboo_blocks.bamboo_torch": "Бамбуковий смолоскип",
+  "block.bamboo_blocks.bamboo_wall_torch": "Бамбуковий настенний смолоскип",
+  "block.bamboo_blocks.potted_bamboo_torch": "Бамбуковый смолоскип в горщику",
+  
+  "block.bamboo_blocks.soul_bamboo_torch": "Бамбуковий смолоскип душ",
+  "block.bamboo_blocks.soul_bamboo_wall_torch": "Бамбуковий настінний смолоскип душ",
+  "block.bamboo_blocks.potted_soul_bamboo_torch": "Бамбуковий смолоскип душ в горщику",
+  
+  "block.bamboo_blocks.bamboo_planks": "Бамбукові дошки",
+  "block.bamboo_blocks.bamboo_stairs": "Бамбукові сходи",
+  "block.bamboo_blocks.bamboo_slab": "Бамбукова плита",
+  "block.bamboo_blocks.bamboo_fence": "Бамбуковий паркан",
+  "block.bamboo_blocks.bamboo_fence_gate": "Бамбукова хвіртка",
+  "block.bamboo_blocks.bamboo_door": "Бамбукові двері",
+  "block.bamboo_blocks.bamboo_trapdoor": "Бамбуковий люк",
+  "block.bamboo_blocks.bamboo_button": "Бамбукова кнопка",
+  "block.bamboo_blocks.bamboo_pressure_plate": "Бамбукова натискна плита",
+  "block.bamboo_blocks.bamboo_sign": "Бамбукова табличка",
+  "block.bamboo_blocks.bamboo_wall_sign": "Бамбукова настінна табличка",
+  "block.bamboo_blocks.bamboo_ladder": "Бамбукова драбина",
+  "block.bamboo_blocks.vertical_bamboo_planks": "Вертикальні бамбукові дошки",
+  "block.bamboo_blocks.trapped_bamboo_chest": "Бамбукова скриня-пастка",
+  "block.bamboo_blocks.bamboo_vertical_slab": "Бамбукова вертикальна плита",
+  "block.bamboo_blocks.bamboo_bookshelf": "Бамбукова книжкова полиця",
+  "block.bamboo_blocks.bamboo_chest": "Бамбукова скриня",
+  "block.bamboo_blocks.bamboo_trapped_chest": "Бамбукова скриня-пастка",
+  "block.bamboo_blocks.bamboo_beehive": "Бамбуковий вулик",
+
+  "block.bamboo_blocks.reed_thatch": "Блок цукрової тростини",
+  "block.bamboo_blocks.reed_thatch_stairs": "Сходи з цукрової тростини",
+  "block.bamboo_blocks.reed_thatch_slab": "Плита з цукрової тростини",
+  "block.bamboo_blocks.reed_thatch_vertical_slab": "Вертикальна плита з цукрової тростини",
+
+  "item.bamboo_blocks.bamboo_boat": "Бамбуковий човен"
+}
